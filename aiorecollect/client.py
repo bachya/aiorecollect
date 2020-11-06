@@ -50,6 +50,7 @@ class Client:
         """Make an API request."""
         use_running_session = self._session and not self._session.closed
 
+        session: ClientSession
         if use_running_session:
             session = self._session
         else:
