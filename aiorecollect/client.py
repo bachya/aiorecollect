@@ -29,7 +29,7 @@ class Client:
     """Define a client."""
 
     def __init__(
-        self, place_id: str, service_id: int, *, session: Optional[ClientSession] = None
+        self, place_id: str, service_id: int, *, session: ClientSession = None
     ) -> None:
         """Initialize."""
         self._api_url = API_URL_SCAFFOLD.format(place_id, service_id)
