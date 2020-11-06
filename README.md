@@ -12,6 +12,8 @@
 allows users to programmatically retrieve schedules for waste removal in their area,
 including trash, recycling, compost, and more.
 
+Special thanks to @stealthhacker for the inspiration!
+
 # Installation
 
 ```python
