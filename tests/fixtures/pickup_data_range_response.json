@@ -1,0 +1,227 @@
+{
+  "zones": {
+    "1854": {
+      "poly_colour": "rgba(255,255,255,153)",
+      "is_empty": 0,
+      "name": "denver-garbage-monday",
+      "description": {},
+      "has_geom": 0,
+      "link_uri": {},
+      "service_id": 248,
+      "colour_name": "denver-garbage-monday",
+      "has_parcels": 1,
+      "pdf_uri": {},
+      "link_text": {},
+      "priority": 0,
+      "id": 1854,
+      "title": "Trash Monday",
+      "opts": {},
+      "loc_title": {
+        "en": "Trash Monday"
+      },
+      "line_colour": "rgba(255,255,255,255)",
+      "has_unapproved_future_events": 0,
+      "show_when_empty": 0
+    },
+    "1868": {
+      "opts": {},
+      "loc_title": {
+        "en": "Compost Monday"
+      },
+      "priority": 0,
+      "link_text": {},
+      "id": 1868,
+      "title": "Compost Monday",
+      "show_when_empty": 0,
+      "line_colour": "#00ff0a",
+      "has_unapproved_future_events": 0,
+      "link_uri": {},
+      "name": "denver-organics-monday",
+      "poly_colour": "#00ff0a",
+      "is_empty": 1,
+      "description": {},
+      "has_geom": 0,
+      "has_parcels": 1,
+      "colour_name": "denver-organics-monday",
+      "pdf_uri": {},
+      "service_id": 248
+    },
+    "1888": {
+      "service_id": 248,
+      "colour_name": "denver-recycle-monday-b",
+      "has_parcels": 1,
+      "pdf_uri": {},
+      "is_empty": 0,
+      "poly_colour": "#0038ff",
+      "name": "denver-recycle-monday-b",
+      "description": {},
+      "has_geom": 0,
+      "link_uri": {},
+      "line_colour": "#0038ff",
+      "has_unapproved_future_events": 0,
+      "show_when_empty": 0,
+      "priority": 0,
+      "link_text": {},
+      "id": 1888,
+      "title": "Recycle Monday B",
+      "opts": {},
+      "loc_title": {
+        "en": "Recycle Monday B"
+      }
+    }
+  },
+  "parcel_opts": {
+    "address_id": "243721",
+    "_original": {
+      "house": "8673",
+      "street": "E 55TH AVE",
+      "city": "Denver"
+    },
+    "message": {
+      "en": "Trash is collected weekly. Your black trash cart is collected behind the property on collection day. Extra Trash Collection (ETC) is scheduled once every eight weeks. If your trash is collected in the alley, place ETC items directly behind your property (ETC items are collected from both sides of the alley). If trash carts are collected at the curb, place ETC items at the curb no closer than two feet from collection carts or other obstacles.<br /> Recycling is collected every-other-week. Your purple recycle cart is collected behind the property on collection day. <br />  All carts must be set out for collection no later than 7 A.M. on designated collection days. <br />  Account Number: 243721"
+    }
+  },
+  "events": [
+    {
+      "flags": [
+        {
+          "area_name": "Denver",
+          "plain_text_message": null,
+          "id": 183,
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "is_week_long": 0,
+          "voice_message": null,
+          "subject": "Trash",
+          "opts": {},
+          "backgroundColor": "#58595b",
+          "sort_order": 0,
+          "icon": "garbage",
+          "icon_uri_fragment": "garbage",
+          "short_text_message": null,
+          "event_type": "pickup",
+          "color": "#58595b",
+          "borderColor": "#58595B",
+          "name": "garbage",
+          "service_name": "waste"
+        },
+        {
+          "id": 182,
+          "html_message": "",
+          "backgroundColor": "#6247ae",
+          "subject": null,
+          "opts": {},
+          "is_week_long": 0,
+          "voice_message": null,
+          "zone_id": 1888,
+          "textColor": "#FFFFFF",
+          "plain_text_message": null,
+          "area_name": "Denver",
+          "event_type": "pickup",
+          "color": "#6247ae",
+          "borderColor": "#6247ae",
+          "name": "recycle",
+          "service_name": "waste",
+          "event_id": 5770676,
+          "sort_order": 0,
+          "icon_uri_fragment": "133,0,214/recycle",
+          "icon": "recycle:rgb(133,0,214)",
+          "short_text_message": null
+        },
+        {
+          "textColor": "#FFFFFF",
+          "zone_id": 1868,
+          "plain_text_message": null,
+          "area_name": "Denver",
+          "id": 184,
+          "backgroundColor": "#097a07",
+          "opts": {},
+          "subject": null,
+          "is_week_long": 0,
+          "voice_message": null,
+          "html_message": "",
+          "icon_uri_fragment": "9,122,7/leaf",
+          "icon": "leaf:rgb(9,122,7)",
+          "sort_order": 0,
+          "short_text_message": null,
+          "borderColor": "#097a07",
+          "name": "organics",
+          "color": "#097a07",
+          "event_type": "pickup",
+          "event_id": 5771223,
+          "service_name": "waste"
+        }
+      ],
+      "day": "2020-11-02",
+      "custom_message": "",
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "id": 5770961,
+      "opts": {
+        "calendar_only": 0
+      },
+      "custom_subject": "",
+      "zone_id": 1854,
+      "is_approved": 1
+    },
+    {
+      "opts": {
+        "calendar_only": 0
+      },
+      "id": 5770962,
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "custom_message": "",
+      "day": "2020-11-09",
+      "flags": [
+        {
+          "opts": {},
+          "voice_message": null,
+          "subject": "Trash",
+          "is_week_long": 0,
+          "backgroundColor": "#58595b",
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "id": 183,
+          "plain_text_message": null,
+          "area_name": "Denver",
+          "service_name": "waste",
+          "borderColor": "#58595B",
+          "color": "#58595b",
+          "name": "garbage",
+          "event_type": "pickup",
+          "short_text_message": null,
+          "icon": "garbage",
+          "icon_uri_fragment": "garbage",
+          "sort_order": 0
+        },
+        {
+          "area_name": "Denver",
+          "plain_text_message": null,
+          "textColor": "#FFFFFF",
+          "zone_id": 1868,
+          "opts": {},
+          "subject": null,
+          "voice_message": null,
+          "is_week_long": 0,
+          "backgroundColor": "#097a07",
+          "html_message": "",
+          "id": 184,
+          "short_text_message": null,
+          "icon": "leaf:rgb(9,122,7)",
+          "icon_uri_fragment": "9,122,7/leaf",
+          "sort_order": 0,
+          "event_id": 5771224,
+          "service_name": "waste",
+          "color": "#097a07",
+          "name": "organics",
+          "borderColor": "#097a07",
+          "event_type": "pickup"
+        }
+      ],
+      "is_approved": 1,
+      "zone_id": 1854,
+      "custom_subject": ""
+    }
+  ]
+}
