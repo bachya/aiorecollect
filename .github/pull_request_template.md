@@ -2,7 +2,7 @@
 
 **Does this fix a specific issue?**
 
-Fixes https://github.com/bachya/aiopinboard/issues/<ISSUE ID>
+Fixes https://github.com/bachya/aiorecollect/issues/<ISSUE ID>
   
 **Checklist:**
 
