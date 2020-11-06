@@ -92,9 +92,8 @@ from aiorecollect import Client
 
 
 async def main() -> None:
-    """Create the aiohttp session and run the example."""
+    """Run."""
     async with ClientSession() as session:
-        """Run."""
         client = await Client("<PLACE ID>", "<SERVICE ID>")
 
         # Get to work...
