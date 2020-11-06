@@ -1,0 +1,542 @@
+{
+  "parcel_opts": {
+    "message": {
+      "en": "Trash is collected weekly. Your black trash cart is collected behind the property on collection day. Extra Trash Collection (ETC) is scheduled once every eight weeks. If your trash is collected in the alley, place ETC items directly behind your property (ETC items are collected from both sides of the alley). If trash carts are collected at the curb, place ETC items at the curb no closer than two feet from collection carts or other obstacles.<br /> Recycling is collected every-other-week. Your purple recycle cart is collected behind the property on collection day. <br />  All carts must be set out for collection no later than 7 A.M. on designated collection days. <br />  Account Number: 243721"
+    },
+    "address_id": "243721",
+    "_original": {
+      "city": "Atlantis",
+      "street": "Main Street",
+      "house": "1234"
+    }
+  },
+  "events": [
+    {
+      "is_approved": 1,
+      "custom_subject": "",
+      "zone_id": 1854,
+      "opts": {
+        "calendar_only": 0
+      },
+      "day": "2020-11-02",
+      "flags": [
+        {
+          "service_name": "waste",
+          "borderColor": "#58595B",
+          "color": "#58595b",
+          "name": "garbage",
+          "event_type": "pickup",
+          "short_text_message": null,
+          "icon": "garbage",
+          "icon_uri_fragment": "garbage",
+          "sort_order": 0,
+          "subject": "Trash",
+          "is_week_long": 0,
+          "voice_message": null,
+          "opts": {},
+          "backgroundColor": "#58595b",
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "id": 183,
+          "area_name": "Atlantis",
+          "plain_text_message": null
+        },
+        {
+          "id": 182,
+          "subject": null,
+          "is_week_long": 0,
+          "opts": {},
+          "voice_message": null,
+          "backgroundColor": "#6247ae",
+          "html_message": "",
+          "textColor": "#FFFFFF",
+          "zone_id": 1888,
+          "plain_text_message": null,
+          "area_name": "Atlantis",
+          "name": "recycle",
+          "borderColor": "#6247ae",
+          "color": "#6247ae",
+          "event_type": "pickup",
+          "event_id": 5770676,
+          "service_name": "waste",
+          "icon": "recycle:rgb(133,0,214)",
+          "icon_uri_fragment": "133,0,214/recycle",
+          "sort_order": 0,
+          "short_text_message": null
+        },
+        {
+          "short_text_message": null,
+          "sort_order": 0,
+          "icon_uri_fragment": "9,122,7/leaf",
+          "icon": "leaf:rgb(9,122,7)",
+          "service_name": "waste",
+          "event_id": 5771223,
+          "event_type": "pickup",
+          "color": "#097a07",
+          "borderColor": "#097a07",
+          "name": "organics",
+          "area_name": "Atlantis",
+          "plain_text_message": null,
+          "zone_id": 1868,
+          "textColor": "#FFFFFF",
+          "html_message": "",
+          "backgroundColor": "#097a07",
+          "voice_message": null,
+          "opts": {},
+          "subject": null,
+          "is_week_long": 0,
+          "id": 184
+        }
+      ],
+      "id": 5770961,
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "custom_message": ""
+    },
+    {
+      "opts": {
+        "calendar_only": 0
+      },
+      "custom_message": "",
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "id": 5770962,
+      "flags": [
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "garbage",
+          "icon": "garbage",
+          "sort_order": 0,
+          "service_name": "waste",
+          "borderColor": "#58595B",
+          "color": "#58595b",
+          "name": "garbage",
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "area_name": "Atlantis",
+          "backgroundColor": "#58595b",
+          "voice_message": null,
+          "subject": "Trash",
+          "is_week_long": 0,
+          "opts": {},
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "id": 183
+        },
+        {
+          "short_text_message": null,
+          "sort_order": 0,
+          "icon_uri_fragment": "9,122,7/leaf",
+          "icon": "leaf:rgb(9,122,7)",
+          "service_name": "waste",
+          "event_id": 5771224,
+          "event_type": "pickup",
+          "borderColor": "#097a07",
+          "color": "#097a07",
+          "name": "organics",
+          "area_name": "Atlantis",
+          "plain_text_message": null,
+          "zone_id": 1868,
+          "textColor": "#FFFFFF",
+          "html_message": "",
+          "backgroundColor": "#097a07",
+          "is_week_long": 0,
+          "opts": {},
+          "voice_message": null,
+          "subject": null,
+          "id": 184
+        }
+      ],
+      "day": "2020-11-09",
+      "is_approved": 1,
+      "zone_id": 1854,
+      "custom_subject": ""
+    },
+    {
+      "is_approved": 1,
+      "custom_subject": "",
+      "zone_id": 1854,
+      "opts": {
+        "calendar_only": 0
+      },
+      "flags": [
+        {
+          "short_text_message": null,
+          "icon": "garbage",
+          "icon_uri_fragment": "garbage",
+          "sort_order": 0,
+          "service_name": "waste",
+          "borderColor": "#58595B",
+          "name": "garbage",
+          "color": "#58595b",
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "area_name": "Atlantis",
+          "is_week_long": 0,
+          "subject": "Trash",
+          "opts": {},
+          "voice_message": null,
+          "backgroundColor": "#58595b",
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "id": 183
+        },
+        {
+          "plain_text_message": null,
+          "area_name": "Atlantis",
+          "zone_id": 1888,
+          "textColor": "#FFFFFF",
+          "html_message": "",
+          "backgroundColor": "#6247ae",
+          "subject": null,
+          "voice_message": null,
+          "opts": {},
+          "is_week_long": 0,
+          "id": 182,
+          "short_text_message": null,
+          "sort_order": 0,
+          "icon_uri_fragment": "133,0,214/recycle",
+          "icon": "recycle:rgb(133,0,214)",
+          "service_name": "waste",
+          "event_id": 5770677,
+          "event_type": "pickup",
+          "name": "recycle",
+          "color": "#6247ae",
+          "borderColor": "#6247ae"
+        },
+        {
+          "html_message": "",
+          "backgroundColor": "#097a07",
+          "opts": {},
+          "is_week_long": 0,
+          "voice_message": null,
+          "subject": null,
+          "id": 184,
+          "area_name": "Atlantis",
+          "plain_text_message": null,
+          "zone_id": 1868,
+          "textColor": "#FFFFFF",
+          "service_name": "waste",
+          "event_id": 5771225,
+          "event_type": "pickup",
+          "borderColor": "#097a07",
+          "color": "#097a07",
+          "name": "organics",
+          "short_text_message": null,
+          "sort_order": 0,
+          "icon_uri_fragment": "9,122,7/leaf",
+          "icon": "leaf:rgb(9,122,7)"
+        }
+      ],
+      "day": "2020-11-16",
+      "id": 5770963,
+      "custom_message": "",
+      "options": {
+        "ending_at": "2020-12-31"
+      }
+    },
+    {
+      "day": "2020-11-23",
+      "flags": [
+        {
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "voice_message": null,
+          "is_week_long": 0,
+          "subject": "Trash",
+          "opts": {},
+          "backgroundColor": "#58595b",
+          "id": 183,
+          "area_name": "Atlantis",
+          "plain_text_message": null,
+          "service_name": "waste",
+          "event_type": "pickup",
+          "borderColor": "#58595B",
+          "name": "garbage",
+          "color": "#58595b",
+          "short_text_message": null,
+          "sort_order": 0,
+          "icon": "garbage",
+          "icon_uri_fragment": "garbage"
+        },
+        {
+          "html_message": "",
+          "subject": null,
+          "voice_message": null,
+          "opts": {},
+          "is_week_long": 0,
+          "backgroundColor": "#097a07",
+          "id": 184,
+          "area_name": "Atlantis",
+          "plain_text_message": null,
+          "zone_id": 1868,
+          "textColor": "#FFFFFF",
+          "service_name": "waste",
+          "event_id": 5771226,
+          "event_type": "pickup",
+          "borderColor": "#097a07",
+          "name": "organics",
+          "color": "#097a07",
+          "short_text_message": null,
+          "sort_order": 0,
+          "icon": "leaf:rgb(9,122,7)",
+          "icon_uri_fragment": "9,122,7/leaf"
+        }
+      ],
+      "id": 5770964,
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "custom_message": "",
+      "opts": {
+        "calendar_only": 0
+      },
+      "custom_subject": "",
+      "zone_id": 1854,
+      "is_approved": 1
+    },
+    {
+      "title": "Holiday",
+      "end_day": "2020-11-26",
+      "id": 22778,
+      "flags": [
+        {
+          "short_text_message_hash": {
+            "en-GB": null,
+            "en-US": null
+          },
+          "textColor": "#ffffff",
+          "voice_message_hash": {
+            "en-US": null,
+            "en-GB": null
+          },
+          "plain_text_message": null,
+          "subject_hash": {
+            "es": "Día de Acción de Gracias",
+            "en-GB": null,
+            "en-US": "Thanksgiving Day"
+          },
+          "plain_text_message_hash": {
+            "en-US": null,
+            "en-GB": null
+          },
+          "html_message": null,
+          "pattern": "",
+          "backgroundColor": "#de7325",
+          "voice_message": null,
+          "subject": null,
+          "html_message_hash": {
+            "en-GB": null,
+            "en-US": null
+          },
+          "icon": "",
+          "short_text_message": null,
+          "name": "holiday",
+          "borderColor": "#de7325"
+        }
+      ],
+      "day": "2020-11-26",
+      "is_holiday": 1,
+      "type": "holiday"
+    },
+    {
+      "opts": {
+        "calendar_only": 0
+      },
+      "flags": [
+        {
+          "short_text_message": null,
+          "icon": "garbage",
+          "icon_uri_fragment": "garbage",
+          "sort_order": 0,
+          "service_name": "waste",
+          "color": "#58595b",
+          "name": "garbage",
+          "borderColor": "#58595B",
+          "event_type": "pickup",
+          "area_name": "Atlantis",
+          "plain_text_message": null,
+          "subject": "Trash",
+          "opts": {},
+          "is_week_long": 0,
+          "voice_message": null,
+          "backgroundColor": "#58595b",
+          "html_message": "<a target=\"_blank\" href=\"http://rco.io/QX65N\">Learn more about your trash collection</a>",
+          "id": 183
+        },
+        {
+          "borderColor": "#6247ae",
+          "color": "#6247ae",
+          "name": "recycle",
+          "event_type": "pickup",
+          "event_id": 5770678,
+          "service_name": "waste",
+          "icon_uri_fragment": "133,0,214/recycle",
+          "icon": "recycle:rgb(133,0,214)",
+          "sort_order": 0,
+          "short_text_message": null,
+          "id": 182,
+          "backgroundColor": "#6247ae",
+          "is_week_long": 0,
+          "voice_message": null,
+          "opts": {},
+          "subject": null,
+          "html_message": "",
+          "textColor": "#FFFFFF",
+          "zone_id": 1888,
+          "area_name": "Atlantis",
+          "plain_text_message": null
+        },
+        {
+          "color": "#097a07",
+          "name": "organics",
+          "borderColor": "#097a07",
+          "event_type": "pickup",
+          "event_id": 5771227,
+          "service_name": "waste",
+          "icon": "leaf:rgb(9,122,7)",
+          "icon_uri_fragment": "9,122,7/leaf",
+          "sort_order": 0,
+          "short_text_message": null,
+          "id": 184,
+          "is_week_long": 0,
+          "subject": null,
+          "opts": {},
+          "voice_message": null,
+          "backgroundColor": "#097a07",
+          "html_message": "",
+          "textColor": "#FFFFFF",
+          "zone_id": 1868,
+          "area_name": "Atlantis",
+          "plain_text_message": null
+        },
+        {
+          "event_type": "pickup",
+          "color": "#52c8ed",
+          "borderColor": "#52c8ed",
+          "name": "ExtraTrash_Day",
+          "service_name": "waste",
+          "event_id": 10080228,
+          "sort_order": 0,
+          "icon_uri_fragment": "82,200,237/chair",
+          "icon": "chair:rgb(82,200,237)",
+          "short_text_message": null,
+          "id": 871,
+          "html_message": "",
+          "backgroundColor": "#52c8ed",
+          "subject": "Basura extra",
+          "is_week_long": 0,
+          "opts": {},
+          "voice_message": null,
+          "zone_id": 160232,
+          "textColor": "#000000",
+          "area_name": "Atlantis",
+          "plain_text_message": null
+        }
+      ],
+      "day": "2020-11-30",
+      "id": 5770965,
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "custom_message": "",
+      "is_approved": 1,
+      "custom_subject": "",
+      "zone_id": 1854
+    }
+  ],
+  "zones": {
+    "1854": {
+      "loc_title": {
+        "en": "Trash Monday"
+      },
+      "opts": {},
+      "title": "Trash Monday",
+      "id": 1854,
+      "link_text": {},
+      "priority": 0,
+      "show_when_empty": 0,
+      "has_unapproved_future_events": 0,
+      "line_colour": "rgba(255,255,255,255)",
+      "link_uri": {},
+      "has_geom": 0,
+      "description": {},
+      "name": "denver-garbage-monday",
+      "is_empty": 0,
+      "poly_colour": "rgba(255,255,255,153)",
+      "pdf_uri": {},
+      "has_parcels": 1,
+      "colour_name": "denver-garbage-monday",
+      "service_id": 248
+    },
+    "1868": {
+      "opts": {},
+      "loc_title": {
+        "en": "Compost Monday"
+      },
+      "link_text": {},
+      "priority": 0,
+      "title": "Compost Monday",
+      "id": 1868,
+      "show_when_empty": 0,
+      "line_colour": "#00ff0a",
+      "has_unapproved_future_events": 0,
+      "link_uri": {},
+      "name": "denver-organics-monday",
+      "poly_colour": "#00ff0a",
+      "is_empty": 1,
+      "description": {},
+      "has_geom": 0,
+      "has_parcels": 1,
+      "colour_name": "denver-organics-monday",
+      "pdf_uri": {},
+      "service_id": 248
+    },
+    "1888": {
+      "link_uri": {},
+      "description": {},
+      "has_geom": 0,
+      "name": "denver-recycle-monday-b",
+      "is_empty": 0,
+      "poly_colour": "#0038ff",
+      "pdf_uri": {},
+      "has_parcels": 1,
+      "colour_name": "denver-recycle-monday-b",
+      "service_id": 248,
+      "loc_title": {
+        "en": "Recycle Monday B"
+      },
+      "opts": {},
+      "title": "Recycle Monday B",
+      "id": 1888,
+      "link_text": {},
+      "priority": 0,
+      "show_when_empty": 0,
+      "has_unapproved_future_events": 0,
+      "line_colour": "#0038ff"
+    },
+    "160232": {
+      "loc_title": {
+        "en-US": "extra-garbage-week5-monday"
+      },
+      "opts": {
+        "connector_created": "2020-06-30 22:48:08-0600"
+      },
+      "title": "extra-garbage-week5-monday",
+      "id": 160232,
+      "priority": 0,
+      "link_text": {},
+      "show_when_empty": 0,
+      "has_unapproved_future_events": 0,
+      "line_colour": "FFFFFF",
+      "link_uri": {},
+      "has_geom": 0,
+      "description": {},
+      "name": "denver-extra-garbage-week5-monday",
+      "poly_colour": "FFFFFF",
+      "is_empty": 0,
+      "pdf_uri": {},
+      "has_parcels": 1,
+      "colour_name": "denver-extra-garbage-week5-monday",
+      "service_id": 248
+    }
+  }
+}
