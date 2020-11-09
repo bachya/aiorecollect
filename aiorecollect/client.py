@@ -7,7 +7,7 @@ from typing import List, Optional
 from aiohttp import ClientSession, ClientTimeout
 from aiohttp.client_exceptions import ClientError
 
-from aiorecollect.errors import RequestError
+from aiorecollect.errors import DataError, RequestError
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -72,8 +72,10 @@ class Client:
     async def async_get_next_pickup_event(self) -> PickupEvent:
         """Get the very next pickup event."""
         pickup_events = await self.async_get_pickup_events()
-        future_events = [event for event in pickup_events if event.date > date.today()]
-        return future_events[0]
+        for event in pickup_events:
+            if event.date > date.today():
+                return event
+        raise DataError("No pickup events found after today")
 
     async def async_get_pickup_events(
         self, *, start_date: Optional[date] = None, end_date: Optional[date] = None

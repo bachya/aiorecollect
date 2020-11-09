@@ -6,7 +6,7 @@ from freezegun import freeze_time
 import pytest
 
 from aiorecollect import Client
-from aiorecollect.errors import RequestError
+from aiorecollect.errors import DataError, RequestError
 
 from tests.common import TEST_PLACE_ID, TEST_SERVICE_ID, load_fixture
 
@@ -65,6 +65,51 @@ async def test_get_next_pickup_event_oneshot(aresponses):
     assert next_pickup_event.date == date(2020, 11, 2)
     assert next_pickup_event.pickup_types == ["garbage", "recycle", "organics"]
     assert next_pickup_event.area_name == "Atlantis"
+
+
+@freeze_time("2020-12-01")
+@pytest.mark.asyncio
+async def test_get_next_pickup_event_none_left(aresponses):
+    """Test throwing an error when there isn't a next pickup event."""
+    aresponses.add(
+        "api.recollect.net",
+        f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
+        "get",
+        aresponses.Response(
+            text=load_fixture("pickup_data_response.json"),
+            status=200,
+            headers={"Content-Type": "application/json"},
+        ),
+    )
+
+    async with ClientSession() as session:
+        client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
+        with pytest.raises(DataError):
+            await client.async_get_next_pickup_event()
+
+
+@freeze_time("2020-11-02")
+@pytest.mark.asyncio
+async def test_get_next_pickup_event_same_day(aresponses):
+    """Test always returning the next pickup event (even when today is an event)."""
+    aresponses.add(
+        "api.recollect.net",
+        f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
+        "get",
+        aresponses.Response(
+            text=load_fixture("pickup_data_response.json"),
+            status=200,
+            headers={"Content-Type": "application/json"},
+        ),
+    )
+
+    async with ClientSession() as session:
+        client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
+        next_pickup_event = await client.async_get_next_pickup_event()
+
+        assert next_pickup_event.date == date(2020, 11, 9)
+        assert next_pickup_event.pickup_types == ["garbage", "organics"]
+        assert next_pickup_event.area_name == "Atlantis"
 
 
 @pytest.mark.asyncio
