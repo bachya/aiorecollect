@@ -11,6 +11,15 @@ from aiorecollect.errors import RequestError
 from tests.common import TEST_PLACE_ID, TEST_SERVICE_ID, load_fixture
 
 
+@pytest.mark.asyncio
+async def test_create_client():
+    """Test creating a client and verifying its attributes."""
+    client = Client(TEST_PLACE_ID, TEST_SERVICE_ID)
+
+    assert client.place_id == TEST_PLACE_ID
+    assert client.service_id == TEST_SERVICE_ID
+
+
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
 async def test_get_next_pickup_event(aresponses):
