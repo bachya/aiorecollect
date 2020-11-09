@@ -34,6 +34,8 @@ class Client:
         """Initialize."""
         self._api_url = API_URL_SCAFFOLD.format(place_id, service_id)
         self._session = session
+        self.place_id = place_id
+        self.service_id = service_id
 
     async def _async_get_pickup_data(
         self, *, start_date: Optional[date] = None, end_date: Optional[date] = None
