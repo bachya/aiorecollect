@@ -51,6 +51,10 @@ async def main() -> None:
     """Run."""
     client = await Client("<PLACE ID>", "<SERVICE ID>")
 
+    # The client has a few attributes that you can access:
+    client.place_id
+    client.service_id
+
     # Get all pickup events on the calendar:
     pickup_results = await client.async_get_pickup_events()
 
