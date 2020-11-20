@@ -41,10 +41,9 @@ class Client:
         self, *, start_date: Optional[date] = None, end_date: Optional[date] = None
     ) -> dict:
         """Get pickup data (with an optional start and/or end date)."""
+        url = self._api_url
         if start_date and end_date:
-            url = f"{self._api_url}?after={start_date.isoformat()}&before={end_date.isoformat()}"
-        else:
-            url = self._api_url
+            url += f"?after={start_date.isoformat()}&before={end_date.isoformat()}"
 
         return await self._async_request("get", url)
 
@@ -96,5 +95,5 @@ class Client:
                 ],
                 pickup_data["parcel_opts"]["_original"]["city"],
             )
-            for event in [e for e in pickup_data["events"] if e.get("flags")]
+            for event in [e for e in pickup_data["events"] if "flags" in e]
         ]
