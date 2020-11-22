@@ -98,7 +98,7 @@ from aiorecollect import Client
 async def main() -> None:
     """Run."""
     async with ClientSession() as session:
-        client = await Client("<PLACE ID>", "<SERVICE ID>")
+        client = await Client("<PLACE ID>", "<SERVICE ID>", session=session)
 
         # Get to work...
 
