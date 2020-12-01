@@ -441,6 +441,20 @@
       "is_approved": 1,
       "custom_subject": "",
       "zone_id": 1854
+    },
+    {
+      "opts": {
+        "calendar_only": 0
+      },
+      "day": "2020-11-30",
+      "id": 5770965,
+      "options": {
+        "ending_at": "2020-12-31"
+      },
+      "custom_message": "",
+      "is_approved": 1,
+      "custom_subject": "",
+      "zone_id": 1854
     }
   ],
   "zones": {

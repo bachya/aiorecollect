@@ -5,7 +5,7 @@ from aiohttp import ClientSession
 from freezegun import freeze_time
 import pytest
 
-from aiorecollect import Client
+from aiorecollect.client import Client, PickupType
 from aiorecollect.errors import DataError, RequestError
 
 from tests.common import TEST_PLACE_ID, TEST_SERVICE_ID, load_fixture
@@ -40,7 +40,11 @@ async def test_get_next_pickup_event(aresponses):
         next_pickup_event = await client.async_get_next_pickup_event()
 
         assert next_pickup_event.date == date(2020, 11, 2)
-        assert next_pickup_event.pickup_types == ["garbage", "recycle", "organics"]
+        assert next_pickup_event.pickup_types == [
+            PickupType("garbage", "Trash"),
+            PickupType("recycle"),
+            PickupType("organics"),
+        ]
         assert next_pickup_event.area_name == "Atlantis"
 
 
@@ -63,7 +67,11 @@ async def test_get_next_pickup_event_oneshot(aresponses):
     next_pickup_event = await client.async_get_next_pickup_event()
 
     assert next_pickup_event.date == date(2020, 11, 2)
-    assert next_pickup_event.pickup_types == ["garbage", "recycle", "organics"]
+    assert next_pickup_event.pickup_types == [
+        PickupType("garbage", "Trash"),
+        PickupType("recycle"),
+        PickupType("organics"),
+    ]
     assert next_pickup_event.area_name == "Atlantis"
 
 
@@ -108,7 +116,11 @@ async def test_get_next_pickup_event_same_day(aresponses):
         next_pickup_event = await client.async_get_next_pickup_event()
 
         assert next_pickup_event.date == date(2020, 11, 2)
-        assert next_pickup_event.pickup_types == ["garbage", "recycle", "organics"]
+        assert next_pickup_event.pickup_types == [
+            PickupType("garbage", "Trash"),
+            PickupType("recycle"),
+            PickupType("organics"),
+        ]
         assert next_pickup_event.area_name == "Atlantis"
 
 
