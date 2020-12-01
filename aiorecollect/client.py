@@ -72,7 +72,7 @@ class Client:
         """Get the very next pickup event."""
         pickup_events = await self.async_get_pickup_events()
         for event in pickup_events:
-            if event.date > date.today():
+            if event.date >= date.today():
                 return event
         raise DataError("No pickup events found after today")
 
