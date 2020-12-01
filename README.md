@@ -32,8 +32,8 @@ pip install aiorecollect
 
 To use `aiorecollect`, you must know both your Recollect Place and Service IDs:
 
-1. In Chrome open developer tools and go to network tab.
-2. Go to your city's Recollect collection calendar.
+1. In Google Chrome, open up the Developer console and go to the Network tab.
+2. Navigate to your city's Recollect collection calendar.
 3. Search for and select your address in the UI.
 4. Watch for a request that looks like `https://api.recollect.net/api/places/(place_id)/services/(service_id)/events...`
 5. Use the place_id and service_id when instantiating a new `Client`.
