@@ -76,8 +76,16 @@ The `PickupEvent` object that is returned from the above calls comes with three
 properties:
 
 * `date`: a `datetime.date` that denotes the pickup date
-* `pickup_types`: a list of pickup types that will occur in this event
+* `pickup_types`: a list of `PickupType` objects that will occur with this event
 * `area_name`: the name of the area in which the event is occurring
+
+## The `PickupType` Object
+
+The `PickupType` object contains the "internal" name of the pickup type _and_ a
+human-friendly representation when it exists:
+
+* `name`: the internal name of the pickup type
+* `friendly_name`: the humany-friendly name of the pickup type (if it exists)
 
 ## Connection Pooling
 
