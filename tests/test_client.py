@@ -107,8 +107,8 @@ async def test_get_next_pickup_event_same_day(aresponses):
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
-        assert next_pickup_event.date == date(2020, 11, 9)
-        assert next_pickup_event.pickup_types == ["garbage", "organics"]
+        assert next_pickup_event.date == date(2020, 11, 2)
+        assert next_pickup_event.pickup_types == ["garbage", "recycle", "organics"]
         assert next_pickup_event.area_name == "Atlantis"
 
 
