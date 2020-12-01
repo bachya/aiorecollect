@@ -17,11 +17,19 @@ DEFAULT_TIMEOUT = 10
 
 
 @dataclass(frozen=True)
+class PickupType:
+    """Define a waste pickup type."""
+
+    name: str
+    friendly_name: Optional[str] = None
+
+
+@dataclass(frozen=True)
 class PickupEvent:
-    """Define a waste pickup."""
+    """Define a waste pickup event."""
 
     date: date
-    pickup_types: list
+    pickup_types: List[PickupType]
     area_name: str
 
 
@@ -84,16 +92,24 @@ class Client:
             start_date=start_date, end_date=end_date
         )
 
-        return [
-            PickupEvent(
-                date.fromisoformat(event["day"]),
-                [
-                    pickup["name"]
-                    for pickup in [
-                        f for f in event["flags"] if f.get("event_type") == "pickup"
-                    ]
-                ],
-                pickup_data["parcel_opts"]["_original"]["city"],
+        events = []
+        for event in pickup_data["events"]:
+            if "flags" not in event:
+                continue
+
+            pickup_types = []
+            for flag in event["flags"]:
+                if flag.get("event_type") != "pickup":
+                    continue
+
+                pickup_types.append(PickupType(flag["name"], flag.get("subject")))
+
+            events.append(
+                PickupEvent(
+                    date.fromisoformat(event["day"]),
+                    pickup_types,
+                    pickup_data["parcel_opts"]["_original"]["city"],
+                )
             )
-            for event in [e for e in pickup_data["events"] if "flags" in e]
-        ]
+
+        return events
