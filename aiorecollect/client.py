@@ -94,7 +94,6 @@ class Client:
         pickup_data = await self._async_get_pickup_data(
             start_date=start_date, end_date=end_date
         )
-
         area_name = None
 
         events = []
