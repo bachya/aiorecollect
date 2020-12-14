@@ -30,7 +30,7 @@ class PickupEvent:
 
     date: date
     pickup_types: List[PickupType]
-    area_name: str
+    area_name: Optional[str]
 
 
 class Client:
@@ -69,12 +69,15 @@ class Client:
             async with session.request(method, url, **kwargs) as resp:
                 data = await resp.json()
                 resp.raise_for_status()
-                return data
         except ClientError as err:
             raise RequestError(err) from None
         finally:
             if not use_running_session:
                 await session.close()
+
+        _LOGGER.debug("Data received for %s: %s", url, data)
+
+        return data
 
     async def async_get_next_pickup_event(self) -> PickupEvent:
         """Get the very next pickup event."""
@@ -91,6 +94,7 @@ class Client:
         pickup_data = await self._async_get_pickup_data(
             start_date=start_date, end_date=end_date
         )
+        area_name = None
 
         events = []
         for event in pickup_data["events"]:
@@ -102,14 +106,15 @@ class Client:
                 if flag.get("event_type") != "pickup":
                     continue
 
+                # The area name sometimes only exists at the flag level, so as soon as
+                # we find it within valid, "pickup"-type flags, we save it:
+                if not area_name:
+                    area_name = flag["area_name"]
+
                 pickup_types.append(PickupType(flag["name"], flag.get("subject")))
 
             events.append(
-                PickupEvent(
-                    date.fromisoformat(event["day"]),
-                    pickup_types,
-                    pickup_data["parcel_opts"]["_original"]["city"],
-                )
+                PickupEvent(date.fromisoformat(event["day"]), pickup_types, area_name)
             )
 
         return events

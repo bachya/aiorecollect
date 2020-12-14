@@ -22,14 +22,14 @@ async def test_create_client():
 
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event(aresponses):
-    """Test getting the next pickup event."""
+async def test_get_next_pickup_event_type1(aresponses):
+    """Test getting the next pickup event from data sample 1."""
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
         aresponses.Response(
-            text=load_fixture("pickup_data_response.json"),
+            text=load_fixture("pickup_data_response_1.json"),
             status=200,
             headers={"Content-Type": "application/json"},
         ),
@@ -48,6 +48,34 @@ async def test_get_next_pickup_event(aresponses):
         assert next_pickup_event.area_name == "Atlantis"
 
 
+@freeze_time("2020-11-30")
+@pytest.mark.asyncio
+async def test_get_next_pickup_event_type2(aresponses):
+    """Test getting the next pickup event from data sample 2."""
+    aresponses.add(
+        "api.recollect.net",
+        f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
+        "get",
+        aresponses.Response(
+            text=load_fixture("pickup_data_response_2.json"),
+            status=200,
+            headers={"Content-Type": "application/json"},
+        ),
+    )
+
+    async with ClientSession() as session:
+        client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
+        next_pickup_event = await client.async_get_next_pickup_event()
+
+        assert next_pickup_event.date == date(2020, 12, 1)
+        assert next_pickup_event.pickup_types == [
+            PickupType("Recycling", "Recycling"),
+            PickupType("Organics", "Organics"),
+            PickupType("Garbage", "Garbage"),
+        ]
+        assert next_pickup_event.area_name == "GuelphON"
+
+
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
 async def test_get_next_pickup_event_oneshot(aresponses):
@@ -57,7 +85,7 @@ async def test_get_next_pickup_event_oneshot(aresponses):
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
         aresponses.Response(
-            text=load_fixture("pickup_data_response.json"),
+            text=load_fixture("pickup_data_response_1.json"),
             status=200,
             headers={"Content-Type": "application/json"},
         ),
@@ -84,7 +112,7 @@ async def test_get_next_pickup_event_none_left(aresponses):
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
         aresponses.Response(
-            text=load_fixture("pickup_data_response.json"),
+            text=load_fixture("pickup_data_response_1.json"),
             status=200,
             headers={"Content-Type": "application/json"},
         ),
@@ -105,7 +133,7 @@ async def test_get_next_pickup_event_same_day(aresponses):
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
         aresponses.Response(
-            text=load_fixture("pickup_data_response.json"),
+            text=load_fixture("pickup_data_response_1.json"),
             status=200,
             headers={"Content-Type": "application/json"},
         ),
@@ -132,7 +160,7 @@ async def test_get_pickup_events(aresponses):
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
         aresponses.Response(
-            text=load_fixture("pickup_data_response.json"),
+            text=load_fixture("pickup_data_response_1.json"),
             status=200,
             headers={"Content-Type": "application/json"},
         ),
