@@ -8,7 +8,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/65fe7eb308dca67c1038/maintainability)](https://codeclimate.com/github/bachya/aiorecollect/maintainability)
 [![Say Thanks](https://img.shields.io/badge/SayThanks-!-1EAEDB.svg)](https://saythanks.io/to/bachya)
 
-`aiorecollect` is a Python 3, asyncio-based library for the Recollect Waste API. It
+`aiorecollect` is a Python 3, asyncio-based library for the ReCollect Waste API. It
 allows users to programmatically retrieve schedules for waste removal in their area,
 including trash, recycling, compost, and more.
 
@@ -30,13 +30,15 @@ pip install aiorecollect
 
 # Place and Service IDs
 
-To use `aiorecollect`, you must know both your Recollect Place and Service IDs:
+To use `aiorecollect`, you must know both your ReCollect Place and Service IDs.
 
-1. In Google Chrome, open up the Developer console and go to the Network tab.
-2. Navigate to your city's Recollect collection calendar.
-3. Search for and select your address in the UI.
-4. Watch for a request that looks like `https://api.recollect.net/api/places/(place_id)/services/(service_id)/events...`
-5. Use the place_id and service_id when instantiating a new `Client`.
+In general, cities/municipalities that utilize ReCollect will give you a way to
+subscribe to a calendar with pickup dates. If you examine the iCal URL for this
+calendar, the Place and Service IDs are embedded in it:
+
+```
+webcal://recollect.a.ssl.fastly.net/api/places/PLACE_ID/services/SERVICE_ID/events.en-US.ics
+```
 
 # Usage
 
@@ -89,7 +91,7 @@ human-friendly representation when it exists:
 
 ## Connection Pooling
 
-By default, the library creates a new connection to Recollect with each coroutine. If
+By default, the library creates a new connection to ReCollect with each coroutine. If
 you are calling a large number of coroutines (or merely want to squeeze out every second
 of runtime savings possible), an
 [`aiohttp`](https://github.com/aio-libs/aiohttp) `ClientSession` can be used for connection
