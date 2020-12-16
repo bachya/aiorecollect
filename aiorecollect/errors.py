@@ -2,7 +2,7 @@
 
 
 class RecollectError(Exception):
-    """Define a base Recollect Waste exception."""
+    """Define a base ReCollect Waste exception."""
 
     pass
 

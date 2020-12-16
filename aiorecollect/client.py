@@ -1,4 +1,4 @@
-"""Define an client to interact with Recollect Waste."""
+"""Define an client to interact with ReCollect Waste."""
 from dataclasses import dataclass
 from datetime import date
 import logging
