@@ -7,8 +7,8 @@ from aiorecollect.errors import RequestError
 
 _LOGGER = logging.getLogger(__name__)
 
-PLACE_ID = "<PLACE ID>"
-SERVICE_ID = "<SERVICE ID>"
+PLACE_ID = "22BC7342-745B-11E5-9A0E-78B640878761"
+SERVICE_ID = "248"
 
 
 async def main() -> None:

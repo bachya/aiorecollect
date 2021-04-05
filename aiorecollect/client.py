@@ -1,6 +1,6 @@
 """Define an client to interact with ReCollect Waste."""
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, datetime
 import logging
 from typing import List, Optional
 
@@ -28,7 +28,7 @@ class PickupType:
 class PickupEvent:
     """Define a waste pickup event."""
 
-    date: date
+    date: datetime
     pickup_types: List[PickupType]
     area_name: Optional[str]
 
@@ -83,7 +83,7 @@ class Client:
         """Get the very next pickup event."""
         pickup_events = await self.async_get_pickup_events()
         for event in pickup_events:
-            if event.date >= date.today():
+            if event.date >= datetime.today():
                 return event
         raise DataError("No pickup events found after today")
 
@@ -114,7 +114,9 @@ class Client:
                 pickup_types.append(PickupType(flag["name"], flag.get("subject")))
 
             events.append(
-                PickupEvent(date.fromisoformat(event["day"]), pickup_types, area_name)
+                PickupEvent(
+                    datetime.strptime(event["day"], "%Y-%m-%d"), pickup_types, area_name
+                )
             )
 
         return events
