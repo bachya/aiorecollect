@@ -113,7 +113,8 @@ class Client:
 
                 pickup_types.append(PickupType(flag["name"], flag.get("subject")))
 
-            # If not of our events are "pickup" events, don't bother appending:
+            # If this event doesn't include any "pickup" flags, don't both including
+            # it:
             if not pickup_types:
                 continue
 
