@@ -170,7 +170,7 @@ async def test_get_pickup_events(aresponses):
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         pickup_events = await client.async_get_pickup_events()
 
-        assert len(pickup_events) == 6
+        assert len(pickup_events) == 5
 
 
 @pytest.mark.asyncio
