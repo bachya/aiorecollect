@@ -113,6 +113,11 @@ class Client:
 
                 pickup_types.append(PickupType(flag["name"], flag.get("subject")))
 
+            # If this event doesn't include any "pickup" flags, don't bother including
+            # it (since, in that case, it really isn't an event we care about):
+            if not pickup_types:
+                continue
+
             events.append(
                 PickupEvent(
                     datetime.strptime(event["day"], "%Y-%m-%d"), pickup_types, area_name
