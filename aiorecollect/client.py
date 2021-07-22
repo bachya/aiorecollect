@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 from datetime import date, datetime
 import logging
-from typing import List, Optional
+from typing import Any, Dict, List, Optional, cast
 
 from aiohttp import ClientSession, ClientTimeout
 from aiohttp.client_exceptions import ClientError
@@ -37,7 +37,7 @@ class Client:
     """Define a client."""
 
     def __init__(
-        self, place_id: str, service_id: int, *, session: ClientSession = None
+        self, place_id: str, service_id: int, *, session: Optional[ClientSession] = None
     ) -> None:
         """Initialize."""
         self._api_url = API_URL_SCAFFOLD.format(place_id, service_id)
@@ -55,15 +55,18 @@ class Client:
 
         return await self._async_request("get", url)
 
-    async def _async_request(self, method: str, url: str, **kwargs) -> dict:
+    async def _async_request(
+        self, method: str, url: str, **kwargs: Dict[str, Any]
+    ) -> dict:
         """Make an API request."""
         use_running_session = self._session and not self._session.closed
 
-        session: ClientSession
         if use_running_session:
             session = self._session
         else:
             session = ClientSession(timeout=ClientTimeout(total=DEFAULT_TIMEOUT))
+
+        assert session
 
         try:
             async with session.request(method, url, **kwargs) as resp:
@@ -77,7 +80,7 @@ class Client:
 
         _LOGGER.debug("Data received for %s: %s", url, data)
 
-        return data
+        return cast(Dict[str, Any], data)
 
     async def async_get_next_pickup_event(self) -> PickupEvent:
         """Get the very next pickup event."""
