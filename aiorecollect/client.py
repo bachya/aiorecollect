@@ -28,7 +28,7 @@ class PickupType:
 class PickupEvent:
     """Define a waste pickup event."""
 
-    date: datetime
+    date: date
     pickup_types: List[PickupType]
     area_name: Optional[str]
 
@@ -86,7 +86,7 @@ class Client:
         """Get the very next pickup event."""
         pickup_events = await self.async_get_pickup_events()
         for event in pickup_events:
-            if event.date >= datetime.today():
+            if event.date >= date.today():
                 return event
         raise DataError("No pickup events found after today")
 
@@ -123,7 +123,9 @@ class Client:
 
             events.append(
                 PickupEvent(
-                    datetime.strptime(event["day"], "%Y-%m-%d"), pickup_types, area_name
+                    datetime.strptime(event["day"], "%Y-%m-%d").date(),
+                    pickup_types,
+                    area_name,
                 )
             )
 
