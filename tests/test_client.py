@@ -1,5 +1,5 @@
 """Test tag API endpoints."""
-from datetime import date, datetime
+from datetime import date
 
 from aiohttp import ClientSession
 from freezegun import freeze_time
@@ -39,7 +39,7 @@ async def test_get_next_pickup_event_type1(aresponses):
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
-        assert next_pickup_event.date == datetime(2020, 11, 2, 0, 0, 0)
+        assert next_pickup_event.date == date(2020, 11, 2)
         assert next_pickup_event.pickup_types == [
             PickupType("garbage", "Trash"),
             PickupType("recycle"),
@@ -67,7 +67,7 @@ async def test_get_next_pickup_event_type2(aresponses):
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
-        assert next_pickup_event.date == datetime(2020, 12, 1, 0, 0, 0)
+        assert next_pickup_event.date == date(2020, 12, 1)
         assert next_pickup_event.pickup_types == [
             PickupType("Recycling", "Recycling"),
             PickupType("Organics", "Organics"),
@@ -94,7 +94,7 @@ async def test_get_next_pickup_event_oneshot(aresponses):
     client = Client(TEST_PLACE_ID, TEST_SERVICE_ID)
     next_pickup_event = await client.async_get_next_pickup_event()
 
-    assert next_pickup_event.date == datetime(2020, 11, 2, 0, 0, 0)
+    assert next_pickup_event.date == date(2020, 11, 2)
     assert next_pickup_event.pickup_types == [
         PickupType("garbage", "Trash"),
         PickupType("recycle"),
@@ -143,7 +143,7 @@ async def test_get_next_pickup_event_same_day(aresponses):
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
-        assert next_pickup_event.date == datetime(2020, 11, 2, 0, 0, 0)
+        assert next_pickup_event.date == date(2020, 11, 2)
         assert next_pickup_event.pickup_types == [
             PickupType("garbage", "Trash"),
             PickupType("recycle"),
