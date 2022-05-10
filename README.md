@@ -59,10 +59,10 @@ async def main() -> None:
     client.service_id
 
     # Get all pickup events on the calendar:
-    pickup_results = await client.async_get_pickup_events()
+    pickup_events = await client.async_get_pickup_events()
 
     # ...or get all pickup events within a certain date range:
-    pickup_results = await client.async_get_pickup_events(
+    pickup_events = await client.async_get_pickup_events(
         start_date=date(2020, 10, 1), end_date=date(2020, 10, 31)
     )
 
