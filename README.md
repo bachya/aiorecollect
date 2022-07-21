@@ -8,6 +8,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/65fe7eb308dca67c1038/maintainability)](https://codeclimate.com/github/bachya/aiorecollect/maintainability)
 [![Say Thanks](https://img.shields.io/badge/SayThanks-!-1EAEDB.svg)](https://saythanks.io/to/bachya)
 
+<a href="https://www.buymeacoffee.com/bachya1208P" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 `aiorecollect` is a Python 3, asyncio-based library for the ReCollect Waste API. It
 allows users to programmatically retrieve schedules for waste removal in their area,
 including trash, recycling, compost, and more.
