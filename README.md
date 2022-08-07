@@ -3,7 +3,7 @@
 [![CI](https://github.com/bachya/aiorecollect/workflows/CI/badge.svg)](https://github.com/bachya/aiorecollect/actions)
 [![PyPi](https://img.shields.io/pypi/v/aiorecollect.svg)](https://pypi.python.org/pypi/aiorecollect)
 [![Version](https://img.shields.io/pypi/pyversions/aiorecollect.svg)](https://pypi.python.org/pypi/aiorecollect)
-[![License](https://img.shields.io/pypi/l/aiorecollect.svg)](https://github.com/bachya/aiorecollect/blob/master/LICENSE)
+[![License](https://img.shields.io/pypi/l/aiorecollect.svg)](https://github.com/bachya/aiorecollect/blob/main/LICENSE)
 [![Code Coverage](https://codecov.io/gh/bachya/aiorecollect/branch/dev/graph/badge.svg)](https://codecov.io/gh/bachya/aiorecollect)
 [![Maintainability](https://api.codeclimate.com/v1/badges/65fe7eb308dca67c1038/maintainability)](https://codeclimate.com/github/bachya/aiorecollect/maintainability)
 [![Say Thanks](https://img.shields.io/badge/SayThanks-!-1EAEDB.svg)](https://saythanks.io/to/bachya)
