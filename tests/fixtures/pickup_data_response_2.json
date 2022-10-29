@@ -1,2154 +1,2154 @@
 {
-    "parcel_opts": {},
-    "zones": {
-        "39300": {
-            "show_when_empty": 0,
-            "has_parcels": 1,
-            "pdf_uri": {},
-            "has_unapproved_future_events": 0,
-            "title": "Downtown",
-            "colour_name": "guelph-downtown",
-            "loc_title": {
-                "en": "Downtown"
-            },
-            "has_geom": 0,
-            "is_empty": 0,
-            "service_id": 769,
-            "line_colour": "#ffffff",
-            "poly_colour": "#ffffff",
-            "priority": 0,
-            "link_text": {},
-            "opts": {
-                "connector_created": "2018-01-22 18:03:41-0500"
-            },
-            "description": {},
-            "link_uri": {},
-            "id": 39300,
-            "name": "guelphon-guelph-downtown"
+  "parcel_opts": {},
+  "zones": {
+    "39300": {
+      "show_when_empty": 0,
+      "has_parcels": 1,
+      "pdf_uri": {},
+      "has_unapproved_future_events": 0,
+      "title": "Downtown",
+      "colour_name": "guelph-downtown",
+      "loc_title": {
+        "en": "Downtown"
+      },
+      "has_geom": 0,
+      "is_empty": 0,
+      "service_id": 769,
+      "line_colour": "#ffffff",
+      "poly_colour": "#ffffff",
+      "priority": 0,
+      "link_text": {},
+      "opts": {
+        "connector_created": "2018-01-22 18:03:41-0500"
+      },
+      "description": {},
+      "link_uri": {},
+      "id": 39300,
+      "name": "guelphon-guelph-downtown"
+    }
+  },
+  "events": [
+    {
+      "flags": [
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "sort_order": 1,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "icon": "recycle:rgb(0,166,228)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "subject": "Recycling",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "color": "#00A6E4",
+          "service_name": "waste",
+          "area_name": "GuelphON"
+        },
+        {
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "subject": "Organics",
+          "id": 5414,
+          "name": "Organics",
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null
+        },
+        {
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "subject": "Garbage",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "icon_2119:rgb(147,149,152)",
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "short_text_message": null
         }
+      ],
+      "zone_id": 39300,
+      "is_approved": 1,
+      "custom_message": "",
+      "opts": {},
+      "custom_subject": "",
+      "day": "2020-12-01",
+      "id": 5827949,
+      "options": {}
     },
-    "events": [
+    {
+      "zone_id": 39300,
+      "flags": [
         {
-            "flags": [
-                {
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "sort_order": 1,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "subject": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "color": "#00A6E4",
-                    "service_name": "waste",
-                    "area_name": "GuelphON"
-                },
-                {
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "subject": "Organics",
-                    "id": 5414,
-                    "name": "Organics",
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null
-                },
-                {
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "subject": "Garbage",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "short_text_message": null
-                }
-            ],
-            "zone_id": 39300,
-            "is_approved": 1,
-            "custom_message": "",
-            "opts": {},
-            "custom_subject": "",
-            "day": "2020-12-01",
-            "id": 5827949,
-            "options": {}
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)"
         },
         {
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)"
-                },
-                {
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "color": "#6CB43F",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "short_text_message": null
-                },
-                {
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "id": 5415,
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "subject": "Garbage",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null
-                }
-            ],
-            "is_approved": 1,
-            "custom_message": "",
-            "opts": {},
-            "custom_subject": "",
-            "day": "2020-12-02",
-            "id": 5827950,
-            "options": {}
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "color": "#6CB43F",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)",
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "short_text_message": null
         },
         {
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "subject": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    }
-                },
-                {
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Organics",
-                    "borderColor": "#6CB43F",
-                    "id": 5414,
-                    "name": "Organics",
-                    "color": "#6CB43F"
-                },
-                {
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "subject": "Garbage",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                }
-            ],
-            "is_approved": 1,
-            "custom_message": "",
-            "opts": {},
-            "custom_subject": "",
-            "day": "2020-12-03",
-            "id": 5827951,
-            "options": {}
-        },
-        {
-            "custom_message": "",
-            "is_approved": 1,
-            "flags": [
-                {
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    }
-                },
-                {
-                    "subject": "Organics",
-                    "name": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0
-                },
-                {
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "backgroundColor": "#939598",
-                    "voice_message": null
-                }
-            ],
-            "zone_id": 39300,
-            "opts": {},
-            "id": 5827952,
-            "day": "2020-12-04",
-            "custom_subject": "",
-            "options": {}
-        },
-        {
-            "options": {},
-            "id": 5828020,
-            "day": "2020-12-05",
-            "custom_subject": "",
-            "opts": {},
-            "custom_message": "",
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "short_text_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "subject": "Recycling"
-                },
-                {
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "name": "Organics",
-                    "borderColor": "#6CB43F",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "subject": "Organics",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "short_text_message": null
-                },
-                {
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Garbage",
-                    "id": 5415,
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "short_text_message": null
-                }
-            ]
-        },
-        {
-            "day": "2020-12-07",
-            "custom_subject": "",
-            "id": 5827953,
-            "options": {},
-            "is_approved": 1,
-            "flags": [
-                {
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)"
-                },
-                {
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "subject": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                },
-                {
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#939598",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "subject": "Garbage",
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "short_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null
-                }
-            ],
-            "zone_id": 39300,
-            "custom_message": "",
-            "opts": {}
-        },
-        {
-            "day": "2020-12-08",
-            "custom_subject": "",
-            "id": 5827954,
-            "options": {},
-            "is_approved": 1,
-            "flags": [
-                {
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#00A6E4",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "subject": "Recycling",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)",
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "short_text_message": null
-                },
-                {
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "subject": "Organics",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "plain_text_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null
-                },
-                {
-                    "color": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "subject": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119"
-                }
-            ],
-            "zone_id": 39300,
-            "custom_message": "",
-            "opts": {}
-        },
-        {
-            "is_approved": 1,
-            "flags": [
-                {
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "sort_order": 1,
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Recycling",
-                    "name": "Recycling",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "color": "#00A6E4"
-                },
-                {
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "subject": "Organics",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                },
-                {
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "short_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "color": "#939598",
-                    "subject": "Garbage"
-                }
-            ],
-            "zone_id": 39300,
-            "custom_message": "",
-            "opts": {},
-            "day": "2020-12-09",
-            "custom_subject": "",
-            "id": 5827955,
-            "options": {}
-        },
-        {
-            "day": "2020-12-10",
-            "custom_subject": "",
-            "id": 5827956,
-            "options": {},
-            "is_approved": 1,
-            "flags": [
-                {
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null
-                },
-                {
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "plain_text_message": null,
-                    "sort_order": 2,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Organics",
-                    "color": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "trash_can:rgb(108,180,63)"
-                },
-                {
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "color": "#939598",
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "subject": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                }
-            ],
-            "zone_id": 39300,
-            "custom_message": "",
-            "opts": {}
-        },
-        {
-            "custom_message": "",
-            "flags": [
-                {
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Recycling",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "color": "#00A6E4",
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "sort_order": 1
-                },
-                {
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Organics",
-                    "color": "#6CB43F",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 2,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null
-                },
-                {
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "color": "#939598",
-                    "subject": "Garbage",
-                    "service_name": "waste",
-                    "area_name": "GuelphON"
-                }
-            ],
-            "zone_id": 39300,
-            "is_approved": 1,
-            "opts": {},
-            "id": 5827957,
-            "custom_subject": "",
-            "day": "2020-12-11",
-            "options": {}
-        },
-        {
-            "custom_message": "",
-            "flags": [
-                {
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "sort_order": 1,
-                    "plain_text_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "color": "#00A6E4",
-                    "subject": "Recycling",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                },
-                {
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "short_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "sort_order": 2,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "plain_text_message": null,
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "subject": "Organics"
-                },
-                {
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "id": 5415,
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "subject": "Garbage",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "short_text_message": null
-                }
-            ],
-            "zone_id": 39300,
-            "is_approved": 1,
-            "opts": {},
-            "id": 5828021,
-            "custom_subject": "",
-            "day": "2020-12-12",
-            "options": {}
-        },
-        {
-            "options": {},
-            "id": 5827958,
-            "custom_subject": "",
-            "day": "2020-12-14",
-            "opts": {},
-            "custom_message": "",
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "subject": "Recycling",
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "short_text_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null
-                },
-                {
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "subject": "Organics",
-                    "name": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                },
-                {
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "icon_2119:rgb(147,149,152)"
-                }
-            ],
-            "is_approved": 1
-        },
-        {
-            "opts": {},
-            "custom_message": "",
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "id": 5413,
-                    "borderColor": "#00A6E4"
-                },
-                {
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Organics",
-                    "id": 5414,
-                    "name": "Organics",
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2
-                },
-                {
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "color": "#939598",
-                    "subject": "Garbage",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null
-                }
-            ],
-            "options": {},
-            "id": 5827959,
-            "day": "2020-12-15",
-            "custom_subject": ""
-        },
-        {
-            "opts": {},
-            "custom_message": "",
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Organics",
-                    "id": 5414,
-                    "name": "Organics",
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2
-                },
-                {
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "backgroundColor": "#939598",
-                    "voice_message": null
-                }
-            ],
-            "is_approved": 1,
-            "options": {},
-            "id": 5827960,
-            "custom_subject": "",
-            "day": "2020-12-16"
-        },
-        {
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "subject": "Recycling",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)"
-                },
-                {
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 2,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Organics",
-                    "color": "#6CB43F",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "short_text_message": null,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "subject": "Garbage",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                }
-            ],
-            "custom_message": "",
-            "opts": {},
-            "day": "2020-12-17",
-            "custom_subject": "",
-            "id": 5827961,
-            "options": {}
-        },
-        {
-            "custom_message": "",
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "subject": "Recycling",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)"
-                },
-                {
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "short_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "plain_text_message": null,
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "id": 5414,
-                    "name": "Organics",
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "subject": "Organics"
-                },
-                {
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "icon_2119:rgb(147,149,152)"
-                }
-            ],
-            "opts": {},
-            "id": 5827962,
-            "day": "2020-12-18",
-            "custom_subject": "",
-            "options": {}
-        },
-        {
-            "options": {},
-            "id": 5828022,
-            "day": "2020-12-19",
-            "custom_subject": "",
-            "opts": {},
-            "custom_message": "",
-            "is_approved": 1,
-            "flags": [
-                {
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)"
-                },
-                {
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "short_text_message": null,
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "id": 5414,
-                    "name": "Organics",
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "subject": "Organics",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)"
-                },
-                {
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Garbage",
-                    "name": "Garbage",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "color": "#939598",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "icon_2119:rgb(147,149,152)"
-                }
-            ],
-            "zone_id": 39300
-        },
-        {
-            "id": 5827963,
-            "custom_subject": "",
-            "day": "2020-12-21",
-            "options": {},
-            "custom_message": "",
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "subject": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4"
-                },
-                {
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "subject": "Organics",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F"
-                },
-                {
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "short_text_message": null,
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "subject": "Garbage",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "icon_2119:rgb(147,149,152)"
-                }
-            ],
-            "is_approved": 1,
-            "opts": {}
-        },
-        {
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "subject": "Recycling",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "recycle:rgb(0,166,228)",
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "short_text_message": null
-                },
-                {
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 2,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Organics",
-                    "color": "#6CB43F",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "subject": "Garbage",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "color": "#939598",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3,
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0
-                }
-            ],
-            "custom_message": "",
-            "opts": {},
-            "day": "2020-12-22",
-            "custom_subject": "",
-            "id": 5827964,
-            "options": {}
-        },
-        {
-            "id": 5827965,
-            "custom_subject": "",
-            "day": "2020-12-23",
-            "options": {},
-            "custom_message": "",
-            "flags": [
-                {
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "subject": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "borderColor": "#6CB43F",
-                    "id": 5414,
-                    "name": "Organics",
-                    "color": "#6CB43F",
-                    "subject": "Organics",
-                    "service_name": "waste",
-                    "area_name": "GuelphON"
-                },
-                {
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#939598"
-                }
-            ],
-            "zone_id": 39300,
-            "is_approved": 1,
-            "opts": {}
-        },
-        {
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "subject": "Recycling",
-                    "name": "Recycling",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "color": "#00A6E4",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "sort_order": 1,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0
-                },
-                {
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Organics",
-                    "name": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "trash_can:rgb(108,180,63)"
-                },
-                {
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "borderColor": "#939598"
-                }
-            ],
-            "is_approved": 1,
-            "custom_message": "",
-            "opts": {},
-            "custom_subject": "",
-            "day": "2020-12-24",
-            "id": 5827966,
-            "options": {}
-        },
-        {
-            "title": "Holiday",
-            "end_day": "2020-12-25",
-            "flags": [
-                {
-                    "subject_hash": {
-                        "en": "Christmas Day",
-                        "en-US": "Christmas Day",
-                        "en-GB": "Christmas Day"
-                    },
-                    "voice_message_hash": {
-                        "en-GB": null,
-                        "en-US": null
-                    },
-                    "plain_text_message_hash": {
-                        "en-GB": null,
-                        "en-US": null
-                    },
-                    "icon": "",
-                    "borderColor": "#b50e1a",
-                    "name": "holiday",
-                    "html_message_hash": {
-                        "en-US": null,
-                        "en-GB": null
-                    },
-                    "subject": "Christmas Day",
-                    "pattern": "",
-                    "textColor": "#ffffff",
-                    "short_text_message": null,
-                    "backgroundColor": "#b50e1a",
-                    "voice_message": null,
-                    "html_message": null,
-                    "short_text_message_hash": {
-                        "en-GB": null,
-                        "en-US": null
-                    },
-                    "plain_text_message": null
-                }
-            ],
-            "type": "holiday",
-            "day": "2020-12-25",
-            "id": 28693,
-            "is_holiday": 1
-        },
-        {
-            "options": {},
-            "id": 5828023,
-            "custom_subject": "",
-            "day": "2020-12-26",
-            "opts": {},
-            "custom_message": "",
-            "flags": [
-                {
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "subject": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    }
-                },
-                {
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 2,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Organics",
-                    "color": "#6CB43F",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "color": "#939598",
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "id": 5415,
-                    "subject": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null
-                }
-            ],
-            "zone_id": 39300,
-            "is_approved": 1
-        },
-        {
-            "opts": {},
-            "custom_message": "",
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0
-                },
-                {
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "backgroundColor": "#6CB43F",
-                    "voice_message": null,
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0,
-                    "subject": "Organics",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup"
-                },
-                {
-                    "subject": "Garbage",
-                    "color": "#939598",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "name": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "plain_text_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0
-                }
-            ],
-            "options": {},
-            "id": 5827968,
-            "day": "2020-12-28",
-            "custom_subject": ""
-        },
-        {
-            "day": "2020-12-29",
-            "custom_subject": "",
-            "id": 5827969,
-            "options": {},
-            "is_approved": 1,
-            "flags": [
-                {
-                    "short_text_message": null,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "is_week_long": 0,
-                    "plain_text_message": null,
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "subject": "Recycling",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "borderColor": "#00A6E4",
-                    "name": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "subject": "Organics",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F"
-                },
-                {
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "color": "#939598",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "name": "Garbage",
-                    "subject": "Garbage",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "short_text_message": null
-                }
-            ],
-            "zone_id": 39300,
-            "custom_message": "",
-            "opts": {}
-        },
-        {
-            "options": {},
-            "id": 5827970,
-            "custom_subject": "",
-            "day": "2020-12-30",
-            "opts": {},
-            "custom_message": "",
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "voice_message": null,
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "color": "#00A6E4",
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "id": 5413,
-                    "subject": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                },
-                {
-                    "subject": "Organics",
-                    "name": "Organics",
-                    "id": 5414,
-                    "borderColor": "#6CB43F",
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0
-                },
-                {
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "subject": "Garbage",
-                    "borderColor": "#939598",
-                    "id": 5415,
-                    "name": "Garbage",
-                    "color": "#939598",
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "is_week_long": 0,
-                    "short_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#939598",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "sort_order": 3
-                }
-            ],
-            "is_approved": 1
-        },
-        {
-            "opts": {},
-            "is_approved": 1,
-            "zone_id": 39300,
-            "flags": [
-                {
-                    "sort_order": 1,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "voice_message": null,
-                    "backgroundColor": "#00A6E4",
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "0,166,228/recycle",
-                    "color": "#00A6E4",
-                    "id": 5413,
-                    "name": "Recycling",
-                    "borderColor": "#00A6E4",
-                    "subject": "Recycling",
-                    "area_name": "GuelphON",
-                    "service_name": "waste",
-                    "icon": "recycle:rgb(0,166,228)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    }
-                },
-                {
-                    "subject": "Organics",
-                    "borderColor": "#6CB43F",
-                    "name": "Organics",
-                    "id": 5414,
-                    "color": "#6CB43F",
-                    "service_name": "waste",
-                    "area_name": "GuelphON",
-                    "icon": "trash_can:rgb(108,180,63)",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "event_type": "pickup",
-                    "plain_text_message": null,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
-                    "sort_order": 2,
-                    "voice_message": null,
-                    "backgroundColor": "#6CB43F",
-                    "short_text_message": null,
-                    "icon_uri_fragment": "108,180,63/trash_can",
-                    "is_week_long": 0
-                },
-                {
-                    "short_text_message": null,
-                    "is_week_long": 0,
-                    "icon_uri_fragment": "147,149,152/icon_2119",
-                    "sort_order": 3,
-                    "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
-                    "plain_text_message": null,
-                    "backgroundColor": "#939598",
-                    "voice_message": null,
-                    "icon": "icon_2119:rgb(147,149,152)",
-                    "event_type": "pickup",
-                    "opts": {
-                        "event_type": "pickup"
-                    },
-                    "color": "#939598",
-                    "id": 5415,
-                    "borderColor": "#939598",
-                    "name": "Garbage",
-                    "subject": "Garbage",
-                    "area_name": "GuelphON",
-                    "service_name": "waste"
-                }
-            ],
-            "custom_message": "",
-            "options": {},
-            "day": "2020-12-31",
-            "custom_subject": "",
-            "id": 5827971
-        },
-        {
-            "end_day": "2021-01-01",
-            "title": "Holiday",
-            "flags": [
-                {
-                    "pattern": "",
-                    "textColor": "#FFFFFF",
-                    "short_text_message": null,
-                    "backgroundColor": "#571B7E",
-                    "voice_message": null,
-                    "short_text_message_hash": {
-                        "en-US": null,
-                        "en-GB": null
-                    },
-                    "html_message": null,
-                    "plain_text_message": null,
-                    "subject_hash": {
-                        "es": "Día de Año Nuevo",
-                        "en-US": "New Year's Day",
-                        "fr": "Jour de l'An",
-                        "vi": "Ngay đâu năm",
-                        "en": "New Year's Day",
-                        "de": "Neujahr",
-                        "pa": "ਨਵੇਂ ਸਾਲ ਦਾ ਦਿਨ",
-                        "en-GB": "New Year's Day",
-                        "zh-Hans": "元旦"
-                    },
-                    "voice_message_hash": {
-                        "en-US": null,
-                        "en-GB": null
-                    },
-                    "plain_text_message_hash": {
-                        "en-GB": null,
-                        "en-US": null
-                    },
-                    "icon": "",
-                    "html_message_hash": {
-                        "en-US": null,
-                        "en-GB": null
-                    },
-                    "borderColor": "#000000",
-                    "name": "holiday",
-                    "subject": "New Year's Day"
-                }
-            ],
-            "type": "holiday",
-            "day": "2021-01-01",
-            "id": 120415,
-            "is_holiday": 1
+          "icon": "icon_2119:rgb(147,149,152)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "id": 5415,
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "color": "#939598",
+          "subject": "Garbage",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null
         }
-    ]
+      ],
+      "is_approved": 1,
+      "custom_message": "",
+      "opts": {},
+      "custom_subject": "",
+      "day": "2020-12-02",
+      "id": 5827950,
+      "options": {}
+    },
+    {
+      "zone_id": 39300,
+      "flags": [
+        {
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "color": "#00A6E4",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "subject": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          }
+        },
+        {
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Organics",
+          "borderColor": "#6CB43F",
+          "id": 5414,
+          "name": "Organics",
+          "color": "#6CB43F"
+        },
+        {
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "color": "#939598",
+          "subject": "Garbage",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        }
+      ],
+      "is_approved": 1,
+      "custom_message": "",
+      "opts": {},
+      "custom_subject": "",
+      "day": "2020-12-03",
+      "id": 5827951,
+      "options": {}
+    },
+    {
+      "custom_message": "",
+      "is_approved": 1,
+      "flags": [
+        {
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          }
+        },
+        {
+          "subject": "Organics",
+          "name": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0
+        },
+        {
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Garbage",
+          "color": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "backgroundColor": "#939598",
+          "voice_message": null
+        }
+      ],
+      "zone_id": 39300,
+      "opts": {},
+      "id": 5827952,
+      "day": "2020-12-04",
+      "custom_subject": "",
+      "options": {}
+    },
+    {
+      "options": {},
+      "id": 5828020,
+      "day": "2020-12-05",
+      "custom_subject": "",
+      "opts": {},
+      "custom_message": "",
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "short_text_message": null,
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "subject": "Recycling"
+        },
+        {
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "name": "Organics",
+          "borderColor": "#6CB43F",
+          "id": 5414,
+          "color": "#6CB43F",
+          "subject": "Organics",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)",
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "short_text_message": null
+        },
+        {
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Garbage",
+          "id": 5415,
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "color": "#939598",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "short_text_message": null
+        }
+      ]
+    },
+    {
+      "day": "2020-12-07",
+      "custom_subject": "",
+      "id": 5827953,
+      "options": {},
+      "is_approved": 1,
+      "flags": [
+        {
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)"
+        },
+        {
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "subject": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        },
+        {
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "icon_2119:rgb(147,149,152)",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#939598",
+          "id": 5415,
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "subject": "Garbage",
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "short_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null
+        }
+      ],
+      "zone_id": 39300,
+      "custom_message": "",
+      "opts": {}
+    },
+    {
+      "day": "2020-12-08",
+      "custom_subject": "",
+      "id": 5827954,
+      "options": {},
+      "is_approved": 1,
+      "flags": [
+        {
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#00A6E4",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "subject": "Recycling",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)",
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "short_text_message": null
+        },
+        {
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "color": "#6CB43F",
+          "subject": "Organics",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "plain_text_message": null,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null
+        },
+        {
+          "color": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "subject": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119"
+        }
+      ],
+      "zone_id": 39300,
+      "custom_message": "",
+      "opts": {}
+    },
+    {
+      "is_approved": 1,
+      "flags": [
+        {
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "sort_order": 1,
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "recycle:rgb(0,166,228)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Recycling",
+          "name": "Recycling",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "color": "#00A6E4"
+        },
+        {
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "subject": "Organics",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        },
+        {
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "short_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "id": 5415,
+          "color": "#939598",
+          "subject": "Garbage"
+        }
+      ],
+      "zone_id": 39300,
+      "custom_message": "",
+      "opts": {},
+      "day": "2020-12-09",
+      "custom_subject": "",
+      "id": 5827955,
+      "options": {}
+    },
+    {
+      "day": "2020-12-10",
+      "custom_subject": "",
+      "id": 5827956,
+      "options": {},
+      "is_approved": 1,
+      "flags": [
+        {
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "backgroundColor": "#00A6E4",
+          "voice_message": null
+        },
+        {
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "plain_text_message": null,
+          "sort_order": 2,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Organics",
+          "color": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "trash_can:rgb(108,180,63)"
+        },
+        {
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "color": "#939598",
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "subject": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        }
+      ],
+      "zone_id": 39300,
+      "custom_message": "",
+      "opts": {}
+    },
+    {
+      "custom_message": "",
+      "flags": [
+        {
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "recycle:rgb(0,166,228)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Recycling",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "color": "#00A6E4",
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "sort_order": 1
+        },
+        {
+          "icon": "trash_can:rgb(108,180,63)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Organics",
+          "color": "#6CB43F",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 2,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "backgroundColor": "#6CB43F",
+          "voice_message": null
+        },
+        {
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "color": "#939598",
+          "subject": "Garbage",
+          "service_name": "waste",
+          "area_name": "GuelphON"
+        }
+      ],
+      "zone_id": 39300,
+      "is_approved": 1,
+      "opts": {},
+      "id": 5827957,
+      "custom_subject": "",
+      "day": "2020-12-11",
+      "options": {}
+    },
+    {
+      "custom_message": "",
+      "flags": [
+        {
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "sort_order": 1,
+          "plain_text_message": null,
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "color": "#00A6E4",
+          "subject": "Recycling",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "recycle:rgb(0,166,228)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        },
+        {
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "short_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "sort_order": 2,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "plain_text_message": null,
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "trash_can:rgb(108,180,63)",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "subject": "Organics"
+        },
+        {
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "id": 5415,
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "color": "#939598",
+          "subject": "Garbage",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "short_text_message": null
+        }
+      ],
+      "zone_id": 39300,
+      "is_approved": 1,
+      "opts": {},
+      "id": 5828021,
+      "custom_subject": "",
+      "day": "2020-12-12",
+      "options": {}
+    },
+    {
+      "options": {},
+      "id": 5827958,
+      "custom_subject": "",
+      "day": "2020-12-14",
+      "opts": {},
+      "custom_message": "",
+      "zone_id": 39300,
+      "flags": [
+        {
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "subject": "Recycling",
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "short_text_message": null,
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null
+        },
+        {
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "subject": "Organics",
+          "name": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        },
+        {
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Garbage",
+          "color": "#939598",
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "icon_2119:rgb(147,149,152)"
+        }
+      ],
+      "is_approved": 1
+    },
+    {
+      "opts": {},
+      "custom_message": "",
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "id": 5413,
+          "borderColor": "#00A6E4"
+        },
+        {
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Organics",
+          "id": 5414,
+          "name": "Organics",
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2
+        },
+        {
+          "icon": "icon_2119:rgb(147,149,152)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "id": 5415,
+          "color": "#939598",
+          "subject": "Garbage",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null
+        }
+      ],
+      "options": {},
+      "id": 5827959,
+      "day": "2020-12-15",
+      "custom_subject": ""
+    },
+    {
+      "opts": {},
+      "custom_message": "",
+      "zone_id": 39300,
+      "flags": [
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Organics",
+          "id": 5414,
+          "name": "Organics",
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2
+        },
+        {
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Garbage",
+          "color": "#939598",
+          "id": 5415,
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "backgroundColor": "#939598",
+          "voice_message": null
+        }
+      ],
+      "is_approved": 1,
+      "options": {},
+      "id": 5827960,
+      "custom_subject": "",
+      "day": "2020-12-16"
+    },
+    {
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "subject": "Recycling",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)"
+        },
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 2,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "icon": "trash_can:rgb(108,180,63)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Organics",
+          "color": "#6CB43F",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "short_text_message": null,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "subject": "Garbage",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "color": "#939598",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        }
+      ],
+      "custom_message": "",
+      "opts": {},
+      "day": "2020-12-17",
+      "custom_subject": "",
+      "id": 5827961,
+      "options": {}
+    },
+    {
+      "custom_message": "",
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "subject": "Recycling",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)"
+        },
+        {
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "short_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "plain_text_message": null,
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "id": 5414,
+          "name": "Organics",
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "subject": "Organics"
+        },
+        {
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Garbage",
+          "color": "#939598",
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "id": 5415,
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "icon_2119:rgb(147,149,152)"
+        }
+      ],
+      "opts": {},
+      "id": 5827962,
+      "day": "2020-12-18",
+      "custom_subject": "",
+      "options": {}
+    },
+    {
+      "options": {},
+      "id": 5828022,
+      "day": "2020-12-19",
+      "custom_subject": "",
+      "opts": {},
+      "custom_message": "",
+      "is_approved": 1,
+      "flags": [
+        {
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)"
+        },
+        {
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "short_text_message": null,
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "id": 5414,
+          "name": "Organics",
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "subject": "Organics",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)"
+        },
+        {
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Garbage",
+          "name": "Garbage",
+          "borderColor": "#939598",
+          "id": 5415,
+          "color": "#939598",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "icon_2119:rgb(147,149,152)"
+        }
+      ],
+      "zone_id": 39300
+    },
+    {
+      "id": 5827963,
+      "custom_subject": "",
+      "day": "2020-12-21",
+      "options": {},
+      "custom_message": "",
+      "zone_id": 39300,
+      "flags": [
+        {
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "subject": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4"
+        },
+        {
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "subject": "Organics",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F"
+        },
+        {
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "short_text_message": null,
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "color": "#939598",
+          "subject": "Garbage",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "icon_2119:rgb(147,149,152)"
+        }
+      ],
+      "is_approved": 1,
+      "opts": {}
+    },
+    {
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "subject": "Recycling",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "recycle:rgb(0,166,228)",
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "short_text_message": null
+        },
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 2,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "icon": "trash_can:rgb(108,180,63)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Organics",
+          "color": "#6CB43F",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "subject": "Garbage",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598",
+          "color": "#939598",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3,
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "short_text_message": null,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0
+        }
+      ],
+      "custom_message": "",
+      "opts": {},
+      "day": "2020-12-22",
+      "custom_subject": "",
+      "id": 5827964,
+      "options": {}
+    },
+    {
+      "id": 5827965,
+      "custom_subject": "",
+      "day": "2020-12-23",
+      "options": {},
+      "custom_message": "",
+      "flags": [
+        {
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "subject": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "borderColor": "#6CB43F",
+          "id": 5414,
+          "name": "Organics",
+          "color": "#6CB43F",
+          "subject": "Organics",
+          "service_name": "waste",
+          "area_name": "GuelphON"
+        },
+        {
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Garbage",
+          "color": "#939598",
+          "id": 5415,
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "voice_message": null,
+          "backgroundColor": "#939598"
+        }
+      ],
+      "zone_id": 39300,
+      "is_approved": 1,
+      "opts": {}
+    },
+    {
+      "zone_id": 39300,
+      "flags": [
+        {
+          "subject": "Recycling",
+          "name": "Recycling",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "color": "#00A6E4",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "recycle:rgb(0,166,228)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "sort_order": 1,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0
+        },
+        {
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Organics",
+          "name": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "trash_can:rgb(108,180,63)"
+        },
+        {
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "icon_2119:rgb(147,149,152)",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "subject": "Garbage",
+          "color": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "borderColor": "#939598"
+        }
+      ],
+      "is_approved": 1,
+      "custom_message": "",
+      "opts": {},
+      "custom_subject": "",
+      "day": "2020-12-24",
+      "id": 5827966,
+      "options": {}
+    },
+    {
+      "title": "Holiday",
+      "end_day": "2020-12-25",
+      "flags": [
+        {
+          "subject_hash": {
+            "en": "Christmas Day",
+            "en-US": "Christmas Day",
+            "en-GB": "Christmas Day"
+          },
+          "voice_message_hash": {
+            "en-GB": null,
+            "en-US": null
+          },
+          "plain_text_message_hash": {
+            "en-GB": null,
+            "en-US": null
+          },
+          "icon": "",
+          "borderColor": "#b50e1a",
+          "name": "holiday",
+          "html_message_hash": {
+            "en-US": null,
+            "en-GB": null
+          },
+          "subject": "Christmas Day",
+          "pattern": "",
+          "textColor": "#ffffff",
+          "short_text_message": null,
+          "backgroundColor": "#b50e1a",
+          "voice_message": null,
+          "html_message": null,
+          "short_text_message_hash": {
+            "en-GB": null,
+            "en-US": null
+          },
+          "plain_text_message": null
+        }
+      ],
+      "type": "holiday",
+      "day": "2020-12-25",
+      "id": 28693,
+      "is_holiday": 1
+    },
+    {
+      "options": {},
+      "id": 5828023,
+      "custom_subject": "",
+      "day": "2020-12-26",
+      "opts": {},
+      "custom_message": "",
+      "flags": [
+        {
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "subject": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          }
+        },
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 2,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "icon": "trash_can:rgb(108,180,63)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Organics",
+          "color": "#6CB43F",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "color": "#939598",
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "id": 5415,
+          "subject": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null
+        }
+      ],
+      "zone_id": 39300,
+      "is_approved": 1
+    },
+    {
+      "opts": {},
+      "custom_message": "",
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0
+        },
+        {
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "backgroundColor": "#6CB43F",
+          "voice_message": null,
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0,
+          "subject": "Organics",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup"
+        },
+        {
+          "subject": "Garbage",
+          "color": "#939598",
+          "borderColor": "#939598",
+          "id": 5415,
+          "name": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "plain_text_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "short_text_message": null,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0
+        }
+      ],
+      "options": {},
+      "id": 5827968,
+      "day": "2020-12-28",
+      "custom_subject": ""
+    },
+    {
+      "day": "2020-12-29",
+      "custom_subject": "",
+      "id": 5827969,
+      "options": {},
+      "is_approved": 1,
+      "flags": [
+        {
+          "short_text_message": null,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "is_week_long": 0,
+          "plain_text_message": null,
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "subject": "Recycling",
+          "color": "#00A6E4",
+          "id": 5413,
+          "borderColor": "#00A6E4",
+          "name": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "color": "#6CB43F",
+          "subject": "Organics",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F"
+        },
+        {
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "color": "#939598",
+          "borderColor": "#939598",
+          "id": 5415,
+          "name": "Garbage",
+          "subject": "Garbage",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "icon": "icon_2119:rgb(147,149,152)",
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "short_text_message": null
+        }
+      ],
+      "zone_id": 39300,
+      "custom_message": "",
+      "opts": {}
+    },
+    {
+      "options": {},
+      "id": 5827970,
+      "custom_subject": "",
+      "day": "2020-12-30",
+      "opts": {},
+      "custom_message": "",
+      "zone_id": 39300,
+      "flags": [
+        {
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "backgroundColor": "#00A6E4",
+          "voice_message": null,
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "color": "#00A6E4",
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "id": 5413,
+          "subject": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        },
+        {
+          "subject": "Organics",
+          "name": "Organics",
+          "id": 5414,
+          "borderColor": "#6CB43F",
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0
+        },
+        {
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "icon": "icon_2119:rgb(147,149,152)",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "subject": "Garbage",
+          "borderColor": "#939598",
+          "id": 5415,
+          "name": "Garbage",
+          "color": "#939598",
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "is_week_long": 0,
+          "short_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#939598",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "sort_order": 3
+        }
+      ],
+      "is_approved": 1
+    },
+    {
+      "opts": {},
+      "is_approved": 1,
+      "zone_id": 39300,
+      "flags": [
+        {
+          "sort_order": 1,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Do not use any bags in your blue cart.&nbsp;Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "voice_message": null,
+          "backgroundColor": "#00A6E4",
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "0,166,228/recycle",
+          "color": "#00A6E4",
+          "id": 5413,
+          "name": "Recycling",
+          "borderColor": "#00A6E4",
+          "subject": "Recycling",
+          "area_name": "GuelphON",
+          "service_name": "waste",
+          "icon": "recycle:rgb(0,166,228)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          }
+        },
+        {
+          "subject": "Organics",
+          "borderColor": "#6CB43F",
+          "name": "Organics",
+          "id": 5414,
+          "color": "#6CB43F",
+          "service_name": "waste",
+          "area_name": "GuelphON",
+          "icon": "trash_can:rgb(108,180,63)",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "event_type": "pickup",
+          "plain_text_message": null,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day. Use paper, certified compostable plastic bags or go bagless in your green cart.&nbsp;Place carts at least one meter apart.</p>\n\n<p>&nbsp;</p>",
+          "sort_order": 2,
+          "voice_message": null,
+          "backgroundColor": "#6CB43F",
+          "short_text_message": null,
+          "icon_uri_fragment": "108,180,63/trash_can",
+          "is_week_long": 0
+        },
+        {
+          "short_text_message": null,
+          "is_week_long": 0,
+          "icon_uri_fragment": "147,149,152/icon_2119",
+          "sort_order": 3,
+          "html_message": "<p>All carts must be at the curb by <strong>6:30 a.m.</strong> on your collection day.&nbsp; Use clear bags only.&nbsp; Do not double bag or place filled bags inside another bag.&nbsp; Contents can also be loose.&nbsp; Place carts at least one meter apart.</p>",
+          "plain_text_message": null,
+          "backgroundColor": "#939598",
+          "voice_message": null,
+          "icon": "icon_2119:rgb(147,149,152)",
+          "event_type": "pickup",
+          "opts": {
+            "event_type": "pickup"
+          },
+          "color": "#939598",
+          "id": 5415,
+          "borderColor": "#939598",
+          "name": "Garbage",
+          "subject": "Garbage",
+          "area_name": "GuelphON",
+          "service_name": "waste"
+        }
+      ],
+      "custom_message": "",
+      "options": {},
+      "day": "2020-12-31",
+      "custom_subject": "",
+      "id": 5827971
+    },
+    {
+      "end_day": "2021-01-01",
+      "title": "Holiday",
+      "flags": [
+        {
+          "pattern": "",
+          "textColor": "#FFFFFF",
+          "short_text_message": null,
+          "backgroundColor": "#571B7E",
+          "voice_message": null,
+          "short_text_message_hash": {
+            "en-US": null,
+            "en-GB": null
+          },
+          "html_message": null,
+          "plain_text_message": null,
+          "subject_hash": {
+            "es": "Día de Año Nuevo",
+            "en-US": "New Year's Day",
+            "fr": "Jour de l'An",
+            "vi": "Ngay đâu năm",
+            "en": "New Year's Day",
+            "de": "Neujahr",
+            "pa": "ਨਵੇਂ ਸਾਲ ਦਾ ਦਿਨ",
+            "en-GB": "New Year's Day",
+            "zh-Hans": "元旦"
+          },
+          "voice_message_hash": {
+            "en-US": null,
+            "en-GB": null
+          },
+          "plain_text_message_hash": {
+            "en-GB": null,
+            "en-US": null
+          },
+          "icon": "",
+          "html_message_hash": {
+            "en-US": null,
+            "en-GB": null
+          },
+          "borderColor": "#000000",
+          "name": "holiday",
+          "subject": "New Year's Day"
+        }
+      ],
+      "type": "holiday",
+      "day": "2021-01-01",
+      "id": 120415,
+      "is_holiday": 1
+    }
+  ]
 }
