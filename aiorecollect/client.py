@@ -1,8 +1,10 @@
 """Define an client to interact with ReCollect Waste."""
+from __future__ import annotations
+
+import logging
 from dataclasses import dataclass
 from datetime import date, datetime
-import logging
-from typing import Any, Dict, List, Optional, cast
+from typing import Any, cast
 
 from aiohttp import ClientSession, ClientTimeout
 from aiohttp.client_exceptions import ClientError
@@ -21,7 +23,7 @@ class PickupType:
     """Define a waste pickup type."""
 
     name: str
-    friendly_name: Optional[str] = None
+    friendly_name: str | None = None
 
 
 @dataclass(frozen=True)
@@ -29,26 +31,40 @@ class PickupEvent:
     """Define a waste pickup event."""
 
     date: date
-    pickup_types: List[PickupType]
-    area_name: Optional[str]
+    pickup_types: list[PickupType]
+    area_name: str | None
 
 
 class Client:
     """Define a client."""
 
     def __init__(
-        self, place_id: str, service_id: int, *, session: Optional[ClientSession] = None
+        self, place_id: str, service_id: int, *, session: ClientSession | None = None
     ) -> None:
-        """Initialize."""
+        """Initialize.
+
+        Args:
+            place_id: A ReCollect Waste place ID.
+            service_id: A ReCollect Waste service ID.
+            session: An optional aiohttp ClientSession.
+        """
         self._api_url = API_URL_SCAFFOLD.format(place_id, service_id)
         self._session = session
         self.place_id = place_id
         self.service_id = service_id
 
     async def _async_get_pickup_data(
-        self, *, start_date: Optional[date] = None, end_date: Optional[date] = None
-    ) -> dict:
-        """Get pickup data (with an optional start and/or end date)."""
+        self, *, start_date: date | None = None, end_date: date | None = None
+    ) -> dict[str, Any]:
+        """Get pickup data (with an optional start and/or end date).
+
+        Args:
+            start_date: An optional start date to filter results with.
+            end_date: An optional end date to filter results with.
+
+        Returns:
+            An API response payload.
+        """
         url = self._api_url
         if start_date and end_date:
             url += f"?after={start_date.isoformat()}&before={end_date.isoformat()}"
@@ -56,17 +72,25 @@ class Client:
         return await self._async_request("get", url)
 
     async def _async_request(
-        self, method: str, url: str, **kwargs: Dict[str, Any]
+        self, method: str, url: str, **kwargs: dict[str, Any]
     ) -> dict:
-        """Make an API request."""
-        use_running_session = self._session and not self._session.closed
+        """Make an API request.
 
-        if use_running_session:
+        Args:
+            method: An HTTP method.
+            url: An API url to query.
+            **kwargs: Additional kwargs to send with the request.
+
+        Returns:
+            An API response payload.
+
+        Raises:
+            RequestError: Raised upon an underlying HTTP error.
+        """
+        if use_running_session := self._session and not self._session.closed:
             session = self._session
         else:
             session = ClientSession(timeout=ClientTimeout(total=DEFAULT_TIMEOUT))
-
-        assert session
 
         try:
             async with session.request(method, url, **kwargs) as resp:
@@ -80,10 +104,17 @@ class Client:
 
         _LOGGER.debug("Data received for %s: %s", url, data)
 
-        return cast(Dict[str, Any], data)
+        return cast(dict[str, Any], data)
 
     async def async_get_next_pickup_event(self) -> PickupEvent:
-        """Get the very next pickup event."""
+        """Get the very next pickup event.
+
+        Returns:
+            A PickupEvent object.
+
+        Raises:
+            DataError: Raised on invalid data.
+        """
         pickup_events = await self.async_get_pickup_events()
         for event in pickup_events:
             if event.date >= date.today():
@@ -91,9 +122,17 @@ class Client:
         raise DataError("No pickup events found after today")
 
     async def async_get_pickup_events(
-        self, *, start_date: Optional[date] = None, end_date: Optional[date] = None
-    ) -> List[PickupEvent]:
-        """Get pickup events."""
+        self, *, start_date: date | None = None, end_date: date | None = None
+    ) -> list[PickupEvent]:
+        """Get pickup events.
+
+        Args:
+            start_date: An optional start date to filter results with.
+            end_date: An optional end date to filter results with.
+
+        Returns:
+            A list of PickupEvent objects.
+        """
         pickup_data = await self._async_get_pickup_data(
             start_date=start_date, end_date=end_date
         )

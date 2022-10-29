@@ -1,18 +1,18 @@
 """Test tag API endpoints."""
 from datetime import date
 
-from aiohttp import ClientSession
-from freezegun import freeze_time
 import pytest
+from aiohttp import ClientSession
+from aresponses import ResponsesMockServer
+from freezegun import freeze_time
 
 from aiorecollect.client import Client, PickupType
 from aiorecollect.errors import DataError, RequestError
-
 from tests.common import TEST_PLACE_ID, TEST_SERVICE_ID, load_fixture
 
 
 @pytest.mark.asyncio
-async def test_create_client():
+async def test_create_client() -> None:
     """Test creating a client and verifying its attributes."""
     client = Client(TEST_PLACE_ID, TEST_SERVICE_ID)
 
@@ -22,8 +22,12 @@ async def test_create_client():
 
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_type1(aresponses):
-    """Test getting the next pickup event from data sample 1."""
+async def test_get_next_pickup_event_type1(aresponses: ResponsesMockServer) -> None:
+    """Test getting the next pickup event from data sample 1.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -50,8 +54,12 @@ async def test_get_next_pickup_event_type1(aresponses):
 
 @freeze_time("2020-11-30")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_type2(aresponses):
-    """Test getting the next pickup event from data sample 2."""
+async def test_get_next_pickup_event_type2(aresponses: ResponsesMockServer) -> None:
+    """Test getting the next pickup event from data sample 2.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -78,8 +86,12 @@ async def test_get_next_pickup_event_type2(aresponses):
 
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_oneshot(aresponses):
-    """Test getting the next pickup event with an on-the-fly aiohttp session."""
+async def test_get_next_pickup_event_oneshot(aresponses: ResponsesMockServer) -> None:
+    """Test getting the next pickup event with an on-the-fly aiohttp session.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -105,8 +117,12 @@ async def test_get_next_pickup_event_oneshot(aresponses):
 
 @freeze_time("2020-12-01")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_none_left(aresponses):
-    """Test throwing an error when there isn't a next pickup event."""
+async def test_get_next_pickup_event_none_left(aresponses: ResponsesMockServer) -> None:
+    """Test throwing an error when there isn't a next pickup event.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -126,8 +142,12 @@ async def test_get_next_pickup_event_none_left(aresponses):
 
 @freeze_time("2020-11-02")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_same_day(aresponses):
-    """Test always returning the next pickup event (even when today is an event)."""
+async def test_get_next_pickup_event_same_day(aresponses: ResponsesMockServer) -> None:
+    """Test always returning the next pickup event (even when today is an event).
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -153,8 +173,12 @@ async def test_get_next_pickup_event_same_day(aresponses):
 
 
 @pytest.mark.asyncio
-async def test_get_pickup_events(aresponses):
-    """Test getting all available pickup events."""
+async def test_get_pickup_events(aresponses: ResponsesMockServer) -> None:
+    """Test getting all available pickup events.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -174,8 +198,12 @@ async def test_get_pickup_events(aresponses):
 
 
 @pytest.mark.asyncio
-async def test_get_pickup_events_in_range(aresponses):
-    """Test getting pickup events within a date range."""
+async def test_get_pickup_events_in_range(aresponses: ResponsesMockServer) -> None:
+    """Test getting pickup events within a date range.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
@@ -197,8 +225,12 @@ async def test_get_pickup_events_in_range(aresponses):
 
 
 @pytest.mark.asyncio
-async def test_request_error(aresponses):
-    """Test that an HTTP error raises a RequestError."""
+async def test_request_error(aresponses: ResponsesMockServer) -> None:
+    """Test that an HTTP error raises a RequestError.
+
+    Args:
+        aresponses: An aresponses server.
+    """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
