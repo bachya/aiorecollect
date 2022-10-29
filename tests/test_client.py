@@ -1,8 +1,10 @@
 """Test tag API endpoints."""
+import json
 from datetime import date
+from typing import Any
 
+import aiohttp
 import pytest
-from aiohttp import ClientSession
 from aresponses import ResponsesMockServer
 from freezegun import freeze_time
 
@@ -22,24 +24,23 @@ async def test_create_client() -> None:
 
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_type1(aresponses: ResponsesMockServer) -> None:
+async def test_get_next_pickup_event_type1(
+    aresponses: ResponsesMockServer, pickup_data_response_1: dict[str, Any]
+) -> None:
     """Test getting the next pickup event from data sample 1.
 
     Args:
         aresponses: An aresponses server.
+        pickup_data_response_1: A standard pickup data response.
     """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_response_1.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
-        ),
+        response=aiohttp.web_response.json_response(pickup_data_response_1, status=200),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
@@ -64,14 +65,12 @@ async def test_get_next_pickup_event_type2(aresponses: ResponsesMockServer) -> N
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_response_2.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
+        response=aiohttp.web_response.json_response(
+            json.loads(load_fixture("pickup_data_response_2.json")), status=200
         ),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
@@ -86,21 +85,20 @@ async def test_get_next_pickup_event_type2(aresponses: ResponsesMockServer) -> N
 
 @freeze_time("2020-10-31")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_oneshot(aresponses: ResponsesMockServer) -> None:
+async def test_get_next_pickup_event_oneshot(
+    aresponses: ResponsesMockServer, pickup_data_response_1: dict[str, Any]
+) -> None:
     """Test getting the next pickup event with an on-the-fly aiohttp session.
 
     Args:
         aresponses: An aresponses server.
+        pickup_data_response_1: A standard pickup data response.
     """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_response_1.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
-        ),
+        response=aiohttp.web_response.json_response(pickup_data_response_1, status=200),
     )
 
     client = Client(TEST_PLACE_ID, TEST_SERVICE_ID)
@@ -117,24 +115,23 @@ async def test_get_next_pickup_event_oneshot(aresponses: ResponsesMockServer) ->
 
 @freeze_time("2020-12-01")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_none_left(aresponses: ResponsesMockServer) -> None:
+async def test_get_next_pickup_event_none_left(
+    aresponses: ResponsesMockServer, pickup_data_response_1: dict[str, Any]
+) -> None:
     """Test throwing an error when there isn't a next pickup event.
 
     Args:
         aresponses: An aresponses server.
+        pickup_data_response_1: A standard pickup data response.
     """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_response_1.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
-        ),
+        response=aiohttp.web_response.json_response(pickup_data_response_1, status=200),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         with pytest.raises(DataError):
             await client.async_get_next_pickup_event()
@@ -142,24 +139,23 @@ async def test_get_next_pickup_event_none_left(aresponses: ResponsesMockServer) 
 
 @freeze_time("2020-11-02")
 @pytest.mark.asyncio
-async def test_get_next_pickup_event_same_day(aresponses: ResponsesMockServer) -> None:
+async def test_get_next_pickup_event_same_day(
+    aresponses: ResponsesMockServer, pickup_data_response_1: dict[str, Any]
+) -> None:
     """Test always returning the next pickup event (even when today is an event).
 
     Args:
         aresponses: An aresponses server.
+        pickup_data_response_1: A standard pickup data response.
     """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_response_1.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
-        ),
+        response=aiohttp.web_response.json_response(pickup_data_response_1, status=200),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         next_pickup_event = await client.async_get_next_pickup_event()
 
@@ -173,24 +169,23 @@ async def test_get_next_pickup_event_same_day(aresponses: ResponsesMockServer) -
 
 
 @pytest.mark.asyncio
-async def test_get_pickup_events(aresponses: ResponsesMockServer) -> None:
+async def test_get_pickup_events(
+    aresponses: ResponsesMockServer, pickup_data_response_1: dict[str, Any]
+) -> None:
     """Test getting all available pickup events.
 
     Args:
         aresponses: An aresponses server.
+        pickup_data_response_1: A standard pickup data response.
     """
     aresponses.add(
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_response_1.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
-        ),
+        response=aiohttp.web_response.json_response(pickup_data_response_1, status=200),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         pickup_events = await client.async_get_pickup_events()
 
@@ -208,14 +203,12 @@ async def test_get_pickup_events_in_range(aresponses: ResponsesMockServer) -> No
         "api.recollect.net",
         f"/api/places/{TEST_PLACE_ID}/services/{TEST_SERVICE_ID}/events",
         "get",
-        aresponses.Response(
-            text=load_fixture("pickup_data_range_response.json"),
-            status=200,
-            headers={"Content-Type": "application/json"},
+        response=aiohttp.web_response.json_response(
+            json.loads(load_fixture("pickup_data_range_response.json")), status=200
         ),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
         pickup_events = await client.async_get_pickup_events(
             start_date=date(2020, 11, 1), end_date=date(2020, 11, 10)
@@ -238,7 +231,7 @@ async def test_request_error(aresponses: ResponsesMockServer) -> None:
         aresponses.Response(text=None, status=502),
     )
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         with pytest.raises(RequestError):
             client = Client(TEST_PLACE_ID, TEST_SERVICE_ID, session=session)
             await client.async_get_pickup_events()
