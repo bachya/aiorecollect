@@ -92,6 +92,11 @@ class Client:
         else:
             session = ClientSession(timeout=ClientTimeout(total=DEFAULT_TIMEOUT))
 
+        kwargs.setdefault("params", {})
+        # ReCollect includes some "reminder" events in its JSON, which often aren't
+        # related to actual pickups and can clutter the response; we hide these:
+        kwargs["params"]["hide"] = "reminder_only"
+
         try:
             async with session.request(method, url, **kwargs) as resp:
                 data = await resp.json()
