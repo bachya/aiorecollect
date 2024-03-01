@@ -1,4 +1,5 @@
 """Run an example script to quickly test the client."""
+
 import asyncio
 import logging
 

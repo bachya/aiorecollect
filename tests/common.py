@@ -1,4 +1,5 @@
 """Define common test utilities."""
+
 import os
 
 TEST_PLACE_ID = "12345-abcde"

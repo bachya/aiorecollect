@@ -1,4 +1,5 @@
 """Define an client to interact with ReCollect Waste."""
+
 from __future__ import annotations
 
 import logging
